@@ -1,0 +1,71 @@
+[
+  {
+    "id":"basket1",
+    "name":"Unwind long sleeve tee",
+    "image":"women_cloth_3",
+    "currency":"$",
+    "price":"200",
+    "category_name":"Clothing",
+    "color":"Red",
+    "size":"Medium",
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    }
+  },
+  {
+    "id":"basket2",
+    "name":"Elephant Tee",
+    "image":"women_cloth_2",
+    "currency":"$",
+    "price":"250",
+    "category_name":"Clothing",
+    "color":"Green",
+    "size":"Small",
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    }
+  },
+  {
+    "id":"basket3",
+    "name":"Backpack bear long tee",
+    "image":"men_cloth_5",
+    "currency":"$",
+    "price":"300",
+    "category_name":"Clothing",
+    "color":"Blue",
+    "size":"Large",
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    }
+  },
+  {
+    "id":"basket4",
+    "name":"Infant plushee bear hoodie",
+    "image":"kid_cloth_1",
+    "currency":"$",
+    "price":"100",
+    "category_name":"Clothing",
+    "color":"Pink",
+    "size":"Small",
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    }
+  }
+
+]

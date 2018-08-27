@@ -1,0 +1,44 @@
+[
+  {
+    "user_to": "George",
+    "amount": "$50.00",
+    "date": "30-Jun-2020",
+    "type": "Lorem ipsum"
+  },
+  {
+    "user_to": "Oliver",
+    "amount": "$1000.00",
+    "date": "26-Jun-2020",
+    "type": "Lorem ipsum"
+  },
+  {
+    "user_to": "Harry",
+    "amount": "$500.00",
+    "date": "24-Jun-2020",
+    "type": "Lorem ipsum"
+  },
+  {
+    "user_to": "Jack",
+    "amount": "$200.00",
+    "date": "24-Jun-2020",
+    "type": "Lorem ipsum"
+  },
+  {
+    "user_to": "Jacob",
+    "amount": "$100.00",
+    "date": "10-Jun-2020",
+    "type": "Lorem ipsum"
+  },
+  {
+    "user_to": "Charlie",
+    "amount": "$50.00",
+    "date": "06-Jun-2020",
+    "type": "Lorem ipsum"
+  },
+  {
+    "user_to": "Joshua",
+    "amount": "$10.00",
+    "date": "04-Jun-2020",
+    "type": "Lorem ipsum"
+  }
+]

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/favoriteMenu"
+        android:enabled="true"
+        android:icon="@drawable/favorite"
+        android:title="Favorite"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/dashboardMenu"
+        android:enabled="true"
+        android:icon="@drawable/dashboard"
+        android:title="Dashboard"
+        app:showAsAction="ifRoom" >
+    </item>
+    <item
+        android:id="@+id/bookmarkMenu"
+        android:enabled="true"
+        android:icon="@drawable/bookmarks"
+        android:title="Bookmark"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,202 @@
+[
+  {
+    "id":"GardensByTheBay",
+    "name":"Gardens By the Bay",
+    "city":"Singapore",
+    "type":"Gardens",
+    "image":"sg_gardens_by_the_bay_singapore",
+    "logo_image":"dir_shop_logo_1",
+    "rating_count":"80",
+    "total_rating":"5.0",
+    "distance":"1.4 km",
+    "discount":"10",
+    "total_like":"100",
+    "total_comment":"5",
+    "total_review":"80",
+    "lat":"1.283424",
+    "lng":"103.860631",
+    "opening":"09:00 - 21:00, Open Now",
+    "booking_time":"Friday, 10th October, 7:30 PM",
+    "website":"http://www.panacea-soft.com",
+    "phone":"73737373",
+    "email":"teamps.is.cool@gmail.com",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "address":"824 High Point Street Ottawa, IL 61350",
+    "marker_color":"#D50000",
+    "image_list":[
+      {
+        "image_name":"sg_gardens_by_the_bay_singapore"
+      },
+      {
+        "image_name":"sg_zoo"
+      },
+      {
+        "image_name":"sg_orchard_garden"
+      }
+    ]
+  },
+  {
+    "id":"SingaporeZoo",
+    "name":"Singapore Zoo",
+    "city":"Singapore",
+    "type":"Parks",
+    "image":"sg_zoo",
+    "logo_image":"dir_shop_logo_2",
+    "rating_count":"90",
+    "total_rating":"3.5",
+    "distance":"2.4 km",
+    "discount":"0",
+    "total_like":"80",
+    "total_comment":"2",
+    "total_review":"80",
+    "lat":"1.405314",
+    "lng":"103.788753",
+    "opening":"09:00 - 21:00, Open Now",
+    "booking_time":"Friday, 10th October, 7:30 PM",
+    "website":"http://www.panacea-soft.com",
+    "phone":"73737373",
+    "email":"teamps.is.cool@gmail.com",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse",
+    "address":"824 High Point Street Ottawa, IL 61350",
+    "marker_color":"#512DA8",
+    "image_list":[
+      {
+        "image_name":"sg_zoo"
+      },
+      {
+        "image_name":"sg_gardens_by_the_bay_singapore"
+      }
+    ]
+  },
+  {
+    "id":"NationalOrchidGarden",
+    "name":"National Orchid Garden",
+    "city":"Singapore",
+    "type":"Gardens",
+    "image":"sg_orchard_garden",
+    "logo_image":"dir_shop_logo_3",
+    "rating_count":"50",
+    "total_rating":"4.5",
+    "distance":"1.5 km",
+    "discount":"50",
+    "total_like":"70",
+    "total_comment":"10",
+    "total_review":"80",
+    "lat":"1.311866",
+    "lng":"103.814687",
+    "opening":"09:00 - 21:00, Open Now",
+    "booking_time":"Friday, 10th October, 7:30 PM",
+    "website":"http://www.panacea-soft.com",
+    "phone":"73737373",
+    "email":"teamps.is.cool@gmail.com",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse",
+    "address":"824 High Point Street Ottawa, IL 61350",
+    "marker_color":"#1976D2",
+    "image_list":[
+      {
+        "image_name":"sg_orchard_garden"
+      },
+      {
+        "image_name":"sg_gardens_by_the_bay_singapore"
+      }
+    ]
+  },
+  {
+    "id":"ClarkeQuey",
+    "name":"Clarke Quey",
+    "type":"Points of Interest",
+    "city":"Singapore",
+    "image":"sg_clarke_quay",
+    "logo_image":"dir_shop_logo_4",
+    "rating_count":"100",
+    "total_rating":"5.0",
+    "distance":"3.6 km",
+    "discount":"20",
+    "total_like":"150",
+    "total_comment":"80",
+    "total_review":"80",
+    "lat":"1.290656",
+    "lng":"103.846270",
+    "opening":"09:00 - 21:00, Open Now",
+    "booking_time":"Friday, 10th October, 7:30 PM",
+    "website":"http://www.panacea-soft.com",
+    "phone":"73737373",
+    "email":"teamps.is.cool@gmail.com",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse",
+    "address":"824 High Point Street Ottawa, IL 61350",
+    "marker_color":"#1976D2",
+    "image_list":[
+      {
+        "image_name":"sg_clarke_quay"
+      },
+      {
+        "image_name":"sg_gardens_by_the_bay_singapore"
+      }
+    ]
+  },
+  {
+    "id":"SentosaIsland",
+    "name":"Sentosa Island",
+    "city":"Singapore",
+    "type":"Landmarks",
+    "image":"sg_sentosa",
+    "logo_image":"dir_shop_logo_5",
+    "rating_count":"250",
+    "total_rating":"4.0",
+    "distance":"1.4 km",
+    "total_like":"210",
+    "total_comment":"50",
+    "total_review":"80",
+    "lat":"1.252010",
+    "lng":"103.829873",
+    "opening":"09:00 - 21:00, Open Now",
+    "booking_time":"Friday, 10th October, 7:30 PM",
+    "website":"http://www.panacea-soft.com",
+    "phone":"73737373",
+    "email":"teamps.is.cool@gmail.com",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse",
+    "address":"824 High Point Street Ottawa, IL 61350",
+    "marker_color":"#D50000",
+    "image_list":[
+      {
+        "image_name":"sg_sentosa"
+      },
+      {
+        "image_name":"sg_gardens_by_the_bay_singapore"
+      }
+    ]
+  },
+  {
+    "id":"JurongBirdPark",
+    "name":"Jurong Bird Park",
+    "city":"Singapore",
+    "type":"Parks",
+    "image":"sg_jurong_bird_park",
+    "logo_image":"dir_shop_logo_6",
+    "rating_count":"150",
+    "total_rating":"4.0",
+    "distance":"0.3 km",
+    "discount":"30",
+    "total_like":"10",
+    "total_comment":"1",
+    "total_review":"80",
+    "opening":"09:00 - 21:00, Open Now",
+    "booking_time":"Friday, 10th October, 7:30 PM",
+    "website":"http://www.panacea-soft.com",
+    "phone":"73737373",
+    "email":"teamps.is.cool@gmail.com",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "address": "824 High Point Street Ottawa, IL 61350",
+    "lat":"1.319028",
+    "lng":"103.706570",
+    "marker_color":"#512DA8",
+    "image_list":[
+      {
+        "image_name":"sg_jurong_bird_park"
+      },
+      {
+        "image_name":"sg_gardens_by_the_bay_singapore"
+      }
+    ]
+  }
+]

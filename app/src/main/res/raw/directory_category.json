@@ -1,0 +1,38 @@
+[
+  {
+    "id":"Breakfast",
+    "name":"Breakfast",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+    "image":"dir_cat_1"
+  },
+  {
+    "id":"Lunch",
+    "name":"Lunch",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+    "image":"dir_cat_2"
+  },
+  {
+    "id":"Dinner",
+    "name":"Dinner",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+    "image":"dir_cat_3"
+  },
+  {
+    "id":"CoffeeAndTea",
+    "name":"Coffee & Tea",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+    "image":"dir_cat_4"
+  },
+  {
+    "id":"NightLife",
+    "name":"Nightlife",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+    "image":"dir_cat_5"
+  },
+  {
+    "id":"ThingsToDo",
+    "name":"Things To Do",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+    "image":"dir_cat_6"
+  }
+]

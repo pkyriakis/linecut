@@ -1,0 +1,2004 @@
+[
+  {
+    "id": "feature_aboutus",
+    "name": "About Us UI Collection",
+    "image_name": "baseline_article_white_24",
+    "is_new": "true",
+    "second_level_objects": [
+      {
+        "id": "feature_aboutus_general",
+        "name": "News Concept",
+        "image_name": "",
+        "is_new": "true",
+        "third_level_objects": [
+          {
+            "id": "FeatureAboutusNewsAboutus1Activity",
+            "name": "About Us 1",
+            "image_name": "",
+            "is_new": "true"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_article",
+    "name": "Articles UI Collection",
+    "image_name": "baseline_article_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_article_general",
+        "name": "News Article Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureArticleNewsArticle1Activity",
+            "name": "News Article 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureArticleNewsArticle2Activity",
+            "name": "News Article 2",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_basket",
+    "name": "Basket UI Collection",
+    "image_name": "baseline_basket_line_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_basket_ecommerce",
+        "name": "ECommerce Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureBasketECommerceBasket1Activity",
+            "name": "Basket 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureBasketECommerceBasket2Activity",
+            "name": "Basket 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureBasketECommerceBasket3Activity",
+            "name": "Basket 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureBasketECommerceBasket4Activity",
+            "name": "Basket 4",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_checkout",
+    "name": "Checkout UI Collection",
+    "image_name": "baseline_checkout_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_checkout_ecommerce",
+        "name": "ECommerce Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureCheckoutECommerceCheckout1Activity",
+            "name": "Checkout 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureCheckoutECommerceCheckout2Activity",
+            "name": "Checkout 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureCheckoutECommerceCheckout3Activity",
+            "name": "Checkout 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureCheckoutECommerceCheckout4Activity",
+            "name": "Checkout 4",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureCheckoutECommerceCheckout5Activity",
+            "name": "Checkout 5",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureCheckoutECommerceCheckout6Activity",
+            "name": "Checkout 6",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_comment",
+    "name": "Comment UI Collection",
+    "image_name": "baseline_comment_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_comment_general",
+        "name": "General Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureCommentGeneralEntry1Activity",
+            "name": "Comment Entry 1 (With List)",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureCommentGeneralEntry2Activity",
+            "name": "Comment Entry 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureCommentGeneralList1Activity",
+            "name": "Comment List 1",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_coverflow",
+    "name": "Coverflow UI Collection",
+    "image_name": "baseline_coverflow_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_coverflow_general",
+        "name": "General Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureCoverflowGeneralCoverflow1Activity",
+            "name": "Coverflow 1 (Light)",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureCoverflowGeneralCoverflow2Activity",
+            "name": "Coverflow 2 (Dark)",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_dashboard",
+    "name": "Dashboard UI Collection",
+    "image_name": "baseline_dashboard_white_24",
+    "is_new": "true",
+    "second_level_objects": [
+      {
+        "id": "feature_dashboard_directory",
+        "name": "Directory Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureDashboardDirectoryDashboard1Activity",
+            "name": "Directory Dashboard 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDashboardDirectoryDashboard2Activity",
+            "name": "Directory Dashboard 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDashboardDirectoryDashboard3Activity",
+            "name": "Directory Dashboard 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDashboardDirectoryDashboard4Activity",
+            "name": "Directory Dashboard 4",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDashboardDirectoryDashboard5Activity",
+            "name": "Directory Dashboard 5",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDashboardDirectoryDashboard6Activity",
+            "name": "Directory Dashboard 6",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDashboardDirectoryDashboard7Activity",
+            "name": "Directory Dashboard 7",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDashboardDirectoryDashboard8Activity",
+            "name": "Directory Dashboard 8",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_dashboard_ecommerce",
+        "name": "ECommerce Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureDashboardECommerceDashboard1Activity",
+            "name": "ECommerce Dashboard 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDashboardECommerceDashboard2Activity",
+            "name": "ECommerce Dashboard 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDashboardECommerceDashboard3Activity",
+            "name": "ECommerce Dashboard 3",
+            "image_name": "",
+            "is_new": "true"
+          },
+          {
+            "id": "FeatureDashboardECommerceDashboard4Activity",
+            "name": "ECommerce Dashboard 4",
+            "image_name": "",
+            "is_new": "true"
+          }
+        ]
+      },
+      {
+        "id": "feature_dashboard_wallpaper",
+        "name": "Wallpaper Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureDashboardWallpaperDashboard1Activity",
+            "name": "Wallpaper Dashboard 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDashboardWallpaperDashboard2Activity",
+            "name": "Wallpaper Dashboard 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDashboardWallpaperDashboard3Activity",
+            "name": "Wallpaper Dashboard 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDashboardWallpaperDashboard4Activity",
+            "name": "Wallpaper Dashboard 4",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_finance_dashboard",
+        "name": "Finance Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureDashboardFinanceDashboard1Activity",
+            "name": "Finance Dashboard 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDashboardFinanceDashboard2Activity",
+            "name": "Finance Dashboard 2",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_news_dashboard",
+        "name": "News Concept",
+        "image_name": "",
+        "is_new": "true",
+        "third_level_objects": [
+          {
+            "id": "FeatureDashboardNewsDashboard1Activity",
+            "name": "News Dashboard 1",
+            "image_name": "",
+            "is_new": "true"
+          },
+          {
+            "id": "FeatureDashboardNewsDashboard2Activity",
+            "name": "News Dashboard 2",
+            "image_name": "",
+            "is_new": "true"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_detail",
+    "name": "Detail UI Collection",
+    "image_name": "baseline_detail_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_detail_directory",
+        "name": "Directory Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureDetailDirectoryPlaceDetail1Activity",
+            "name": "Place Detail 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDetailDirectoryPlaceDetail2Activity",
+            "name": "Place Detail 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDetailDirectoryPlaceDetail3Activity",
+            "name": "Place Detail 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDetailDirectoryPlaceDetail4Activity",
+            "name": "Place Detail 4",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_detail_ecommerce",
+        "name": "ECommerce Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureDetailECommerceItemDetail1Activity",
+            "name": "Item Detail 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDetailECommerceItemDetail2Activity",
+            "name": "Item Detail 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDetailECommerceItemDetail3Activity",
+            "name": "Item Detail 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDetailECommerceItemDetail4Activity",
+            "name": "Item Detail 4",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDetailECommerceItemDetail5Activity",
+            "name": "Item Detail 5",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_detail_wallpaper",
+        "name": "Wallpaper Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureDetailWallpaperPhotoDetail1Activity",
+            "name": "Photo Detail 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDetailWallpaperPhotoDetail2Activity",
+            "name": "Photo Detail 2",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_dialog",
+    "name": "Dialog UI Collection",
+    "image_name": "baseline_dialog_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_dialog_general",
+        "name": "General Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureDialogGeneralSuccessDialog1Activity",
+            "name": "Success Dialog",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDialogGeneralErrorDialog1Activity",
+            "name": "Error Dialog",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDialogGeneralWarningDialog1Activity",
+            "name": "Warning Dialog",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDialogGeneralConfirmDialog1Activity",
+            "name": "Confirm Dialog",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureDialogGeneralFeedbackDialog1Activity",
+            "name": "Feedback Dialog",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_expandable",
+    "name": "Expandable UI Collection",
+    "image_name": "baseline_expandable_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_expandable_ecommerce",
+        "name": "ECommerce Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureExpandableECommerceExpandable1Activity",
+            "name": "Expandable 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureExpandableECommerceExpandable2Activity",
+            "name": "Expandable 2",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_forgot_password",
+    "name": "Forgot Password UI Collection",
+    "image_name": "baseline_forgot_password_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_forgot_password_general",
+        "name": "General Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureForgotPasswordGeneralForgotPassword1Activity",
+            "name": "Forgot Password 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureForgotPasswordGeneralForgotPassword2Activity",
+            "name": "Forgot Password 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureForgotPasswordGeneralForgotPassword3Activity",
+            "name": "Forgot Password 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureForgotPasswordGeneralForgotPassword4Activity",
+            "name": "Forgot Password 4",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_gallery",
+    "name": "Gallery UI Collection",
+    "image_name": "baseline_gallery_white_24",
+    "is_new": "true",
+    "second_level_objects": [
+      {
+        "id": "feature_gallery_directory",
+        "name": "Directory Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureGalleryDirectoryGallery1Activity",
+            "name": "Gallery 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGalleryDirectoryGallery2Activity",
+            "name": "Gallery 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGalleryDirectoryGallery3Activity",
+            "name": "Gallery 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGalleryDirectoryGallery4Activity",
+            "name": "Gallery 4",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_gallery_ecommerce",
+        "name": "ECommerce Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureGalleryECommerceGallery1Activity",
+            "name": "Gallery 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGalleryECommerceGallery2Activity",
+            "name": "Gallery 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGalleryECommerceGallery3Activity",
+            "name": "Gallery 3",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_gallery_news",
+        "name": "News Concept",
+        "image_name": "",
+        "is_new": "true",
+        "third_level_objects": [
+          {
+            "id": "FeatureGalleryNewsGallery1Activity",
+            "name": "Gallery 1",
+            "image_name": "",
+            "is_new": "true"
+          },
+          {
+            "id": "FeatureGalleryNewsGallery2Activity",
+            "name": "Gallery 2",
+            "image_name": "",
+            "is_new": "true"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_gdpr",
+    "name": "GDPR UI Collection",
+    "image_name": "baseline_copyright_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_gdpr_general",
+        "name": "General Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureGdprGeneralGdpr1Activity",
+            "name": "GDPR 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGdprGeneralGdpr2Activity",
+            "name": "GDPR 2",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_grid",
+    "name": "Grid UI Collection",
+    "image_name": "baseline_grid_white_24",
+    "is_new": "true",
+    "second_level_objects": [
+      {
+        "id": "feature_grid_directory",
+        "name": "Directory Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureGridDirectoryPlaceGrid1Activity",
+            "name": "Place Grid 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridDirectoryPlaceGrid2Activity",
+            "name": "Place Grid 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridDirectoryPlaceGrid3Activity",
+            "name": "Place Grid 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridDirectoryPlaceGrid4Activity",
+            "name": "Place Grid 4",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridDirectoryPlaceGrid5Activity",
+            "name": "Place Grid 5",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridDirectoryPlaceGrid6Activity",
+            "name": "Place Grid 6",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridDirectoryCityGrid1Activity",
+            "name": "City Grid 1",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_grid_ecommerce",
+        "name": "ECommerce Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureGridECommerceItemGrid1Activity",
+            "name": "Item Grid 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridECommerceItemGrid2Activity",
+            "name": "Item Grid 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridECommerceItemGrid3Activity",
+            "name": "Item Grid 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridECommerceItemGrid4Activity",
+            "name": "Item Grid 4",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridECommerceItemGrid5Activity",
+            "name": "Item Grid 5",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridECommerceItemGrid6Activity",
+            "name": "Item Grid 6",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridECommerceItemGrid7Activity",
+            "name": "Item Grid 7",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridECommerceItemGrid8Activity",
+            "name": "Item Grid 8",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridECommerceItemGrid9Activity",
+            "name": "Item Grid 9",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridECommerceItemGrid10Activity",
+            "name": "Item Grid 10",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridECommerceItemGrid11Activity",
+            "name": "Item Grid 11",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridECommerceCategoryGrid1Activity",
+            "name": "Category Grid 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridECommerceCategoryGrid2Activity",
+            "name": "Category Grid 2",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_grid_wallpaper",
+        "name": "Wallpaper Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureGridWallpaperPhotoGrid1Activity",
+            "name": "Photo Grid 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridWallpaperPhotoGrid2Activity",
+            "name": "Photo Grid 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridWallpaperPhotoGrid3Activity",
+            "name": "Photo Grid 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridWallpaperPhotoGrid4Activity",
+            "name": "Photo Grid 4",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridWallpaperPhotoGrid5Activity",
+            "name": "Photo Grid 5",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridWallpaperPhotoGrid6Activity",
+            "name": "Photo Grid 6",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridWallpaperCategoryGrid1Activity",
+            "name": "Category Grid 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureGridWallpaperCategoryGrid2Activity",
+            "name": "Category Grid 2",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_grid_news",
+        "name": "News Concept",
+        "image_name": "",
+        "is_new": "true",
+        "third_level_objects": [
+          {
+            "id": "FeatureGridNewsGrid1Activity",
+            "name": "News Grid 1",
+            "image_name": "",
+            "is_new": "true"
+          },
+          {
+            "id": "FeatureGridNewsGrid2Activity",
+            "name": "News Grid 2",
+            "image_name": "",
+            "is_new": "true"
+          },
+          {
+            "id": "FeatureGridNewsGrid3Activity",
+            "name": "News Grid 3",
+            "image_name": "",
+            "is_new": "true"
+          },
+          {
+            "id": "FeatureGridNewsCategoryGrid1Activity",
+            "name": "News Category Grid 1",
+            "image_name": "",
+            "is_new": "true"
+          },
+          {
+            "id": "FeatureGridNewsCategoryGrid2Activity",
+            "name": "News Category Grid 2",
+            "image_name": "",
+            "is_new": "true"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_list",
+    "name": "List UI Collection",
+    "image_name": "baseline_list_white_24",
+    "is_new": "true",
+    "second_level_objects": [
+      {
+        "id": "feature_list_directory",
+        "name": "Directory Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureListDirectoryPlaceList1Activity",
+            "name": "Place List 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListDirectoryPlaceList2Activity",
+            "name": "Place List 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListDirectoryPlaceList3Activity",
+            "name": "Place List 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListDirectoryPlaceList4Activity",
+            "name": "Place List 4",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListDirectoryPlaceList5Activity",
+            "name": "Place List 5",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListDirectoryPlaceList6Activity",
+            "name": "Place List 6",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListDirectoryPlaceList7Activity",
+            "name": "Place List 7",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListDirectoryPlaceList8Activity",
+            "name": "Place List 8",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListDirectoryPlaceList9Activity",
+            "name": "Place List 9",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListDirectoryCityList1Activity",
+            "name": "City List 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListDirectoryCityList2Activity",
+            "name": "City List 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListDirectoryCityList3Activity",
+            "name": "City List 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListDirectoryCityList4Activity",
+            "name": "City List 4",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_list_ecommerce",
+        "name": "ECommerce Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureListECommerceItemList1Activity",
+            "name": "Item List 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListECommerceItemList2Activity",
+            "name": "Item List 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListECommerceItemList3Activity",
+            "name": "Item List 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListECommerceItemList4Activity",
+            "name": "Item List 4",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListECommerceItemList5Activity",
+            "name": "Item List 5",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListECommerceItemList6Activity",
+            "name": "Item List 6",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListECommerceItemList7Activity",
+            "name": "Item List 7",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListECommerceItemList8Activity",
+            "name": "Item List 8",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListECommerceCategoryList1Activity",
+            "name": "Category List 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListECommerceCategoryList2Activity",
+            "name": "Category List 2",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_list_wallpaper",
+        "name": "Wallpaper Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureListWallpaperPhotoList1Activity",
+            "name": "Photo List 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListWallpaperPhotoList2Activity",
+            "name": "Photo List 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListWallpaperPhotoList3Activity",
+            "name": "Photo List 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListWallpaperPhotoList4Activity",
+            "name": "Photo List 4",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListWallpaperCategoryList1Activity",
+            "name": "Category List 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListWallpaperCategoryList2Activity",
+            "name": "Category List 2",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_list_general",
+        "name": "General Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureListGeneralDragAndDropListActivity",
+            "name": "Drag and Drop List",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListGeneralExpandableListActivity",
+            "name": "Expandable List",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListGeneralSectionedListActivity",
+            "name": "Sectioned List",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListGeneralStickyHeaderListActivity",
+            "name": "Sticky Header List",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureListGeneralSwipeToDismissListActivity",
+            "name": "Swipe To Dismiss List",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_news_list",
+        "name": "News Concept",
+        "image_name": "",
+        "is_new": "true",
+        "third_level_objects": [
+          {
+            "id": "FeatureListNewsList1Activity",
+            "name": "News List 1",
+            "image_name": "",
+            "is_new": "true"
+          },
+          {
+            "id": "FeatureListNewsList2Activity",
+            "name": "News List 2",
+            "image_name": "",
+            "is_new": "true"
+          },
+          {
+            "id": "FeatureListNewsList3Activity",
+            "name": "News List 3",
+            "image_name": "",
+            "is_new": "true"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_load_more",
+    "name": "Load More UI Collection",
+    "image_name": "baseline_load_more_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_load_more_general",
+        "name": "General Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureLoadMoreGeneralOnScroll",
+            "name": "On Scroll",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureLoadMoreGeneralPullRefresh",
+            "name": "Pull Refresh",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_login",
+    "name": "Login UI Collection",
+    "image_name": "baseline_login_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_login_general",
+        "name": "General Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureLoginGeneralLogin1Activity",
+            "name": "Login 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureLoginGeneralLogin2Activity",
+            "name": "Login 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureLoginGeneralLogin3Activity",
+            "name": "Login 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureLoginGeneralLogin4Activity",
+            "name": "Login 4",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_map",
+    "name": "Map UI Collection",
+    "image_name": "baseline_map_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_map_directory",
+        "name": "Directory Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureMapDirectoryMap1Activity",
+            "name": "Map 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureMapDirectoryMap2Activity",
+            "name": "Map 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureMapDirectoryMap3Activity",
+            "name": "Map 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureMapDirectoryMap4Activity",
+            "name": "Map 4",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_media_player",
+    "name": "Media Player UI Collection",
+    "image_name": "baseline_media_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_media_player_general",
+        "name": "General Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureMediaGeneralMP3Player1Activity",
+            "name": "MP3 Player 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureMediaGeneralMP3Player2Activity",
+            "name": "MP3 Player 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureMediaGeneralVideoPlayer1Activity",
+            "name": "Video Player 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureMediaGeneralVideoPlayer2Activity",
+            "name": "Video Player 2",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_menu",
+    "name": "Menu UI Collection",
+    "image_name": "baseline_menu_black_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_menu_general",
+        "name": "General Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureMenuGeneralMenu1Activity",
+            "name": "Menu 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureMenuGeneralMenu2Activity",
+            "name": "Menu 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureMenuGeneralMenu3Activity",
+            "name": "Menu 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureMenuGeneralMenu4Activity",
+            "name": "Menu 4",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureMenuGeneralMenu5Activity",
+            "name": "Menu 5",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureMenuGeneralMenu6Activity",
+            "name": "Menu 6",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureMenuGeneralMenu7Activity",
+            "name": "Menu 7",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_notfound",
+    "name": "Not Found UI Collection",
+    "image_name": "baseline_not_found_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_notfound_general",
+        "name": "General Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureNotFoundGeneralNoInternet1Activity",
+            "name": "No Internet 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureNotFoundGeneralNoData1Activity",
+            "name": "No Data 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureNotFoundGeneralNoResult1Activity",
+            "name": "No Result 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureNotFoundGeneralNoMessage1Activity",
+            "name": "No Message 1",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_order_history",
+    "name": "Order History UI Collection",
+    "image_name": "baseline_history_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_order_history_ecommerce",
+        "name": "ECommerce Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureOrderECommerceOrder1Activity",
+            "name": "Order 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureOrderECommerceOrder2Activity",
+            "name": "Order 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureOrderECommerceOrder3Activity",
+            "name": "Order 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureOrderECommerceOrder4Activity",
+            "name": "Order 4",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_payment",
+    "name": "Payment UI Collection",
+    "image_name": "baseline_dollar_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_payment_ecommerce",
+        "name": "ECommerce Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeaturePaymentECommerceCardEntry1Activity",
+            "name": "Card Entry 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeaturePaymentECommerceCardOptions1Activity",
+            "name": "Card Options 1",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_profile",
+    "name": "Profile UI Collection",
+    "image_name": "baseline_profile_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_profile_general",
+        "name": "General Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureProfileGeneralProfile1Activity",
+            "name": "Profile 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureProfileGeneralProfile2Activity",
+            "name": "Profile 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureProfileGeneralProfile3Activity",
+            "name": "Profile 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureProfileGeneralProfile4Activity",
+            "name": "Profile 4",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_profile_directory",
+        "name": "Directory Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureProfileDirectoryProfile1Activity",
+            "name": "Profile 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureProfileDirectoryProfile2Activity",
+            "name": "Profile 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureProfileDirectoryProfile3Activity",
+            "name": "Profile 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureProfileDirectoryProfile4Activity",
+            "name": "Profile 4",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_profile_ecommerce",
+        "name": "ECommerce Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureProfileECommerceProfile1Activity",
+            "name": "Profile 1 (For User)",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureProfileECommerceProfile2Activity",
+            "name": "Profile 2 (For Shop)",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureProfileECommerceProfile3Activity",
+            "name": "Profile 3 (For Shop)",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_rating",
+    "name": "Rating UI Collection",
+    "image_name": "baseline_star_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_rating_general",
+        "name": "General Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureRatingGeneralEntry1Activity",
+            "name": "Rating Entry 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureRatingGeneralList1Activity",
+            "name": "Rating List 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureRatingGeneralList2Activity",
+            "name": "Rating List 2",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_search_filter",
+    "name": "Search & Filters UI Collection",
+    "image_name": "baseline_fab_search_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_search_filter_directory",
+        "name": "Directory Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureFilterDirectoryFilter1Activity",
+            "name": "Filter 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureFilterDirectoryFilter2Activity",
+            "name": "Filter 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureFilterDirectoryFilter3Activity",
+            "name": "Filter 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureFilterDirectoryFilter4Activity",
+            "name": "Filter 4",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_search_filter_ecommerce",
+        "name": "ECommerce Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureFilterECommerceFilter1Activity",
+            "name": "Filter 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureFilterECommerceFilter2Activity",
+            "name": "Filter 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureFilterECommerceFilter3Activity",
+            "name": "Filter 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureFilterECommerceFilter4Activity",
+            "name": "Filter 4",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_setting",
+    "name": "Setting UI Collection",
+    "image_name": "baseline_setting_black_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_setting_general",
+        "name": "General Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureSettingGeneralSetting1Activity",
+            "name": "Setting 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureSettingGeneralSetting2Activity",
+            "name": "Setting 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureSettingGeneralSetting3Activity",
+            "name": "Setting 3",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_signup",
+    "name": "Sign Up UI Collection",
+    "image_name": "baseline_profile_edit_pen_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_signup_general",
+        "name": "General Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureSignUpGeneralSignUp1Activity",
+            "name": "Sign Up 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureSignUpGeneralSignUp2Activity",
+            "name": "Sign Up 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureSignUpGeneralSignUp3Activity",
+            "name": "Sign Up 3",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureSignUpGeneralSignUp4Activity",
+            "name": "Sign Up 4",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_splash_screen",
+    "name": "Splash Screen UI Collection",
+    "image_name": "baseline_splash_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_splash_screen_general",
+        "name": "General Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureSplashGeneralSplashScreen1Activity",
+            "name": "Splash Screen 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureSplashGeneralSplashScreen2Activity",
+            "name": "Splash Screen 2",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_stepper",
+    "name": "Stepper UI Collection",
+    "image_name": "baseline_stepper_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_stepper_general",
+        "name": "General Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureStepperGeneralStepper1Activity",
+            "name": "Basic Stepper 1",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_stepper_ecommerce",
+        "name": "ECommerce Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureStepperECommerceStepper1Activity",
+            "name": "Stepper 1",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_stepper_quiz",
+        "name": "Quiz Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureStepperQuizStepper1Activity",
+            "name": "Stepper 1 ( Quiz )",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureStepperQuizStepper2Activity",
+            "name": "Stepper 2 ( Quiz )",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_timeline",
+    "name": "Timeline UI Collection",
+    "image_name": "baseline_timeline_white_24",
+    "is_new": "true",
+    "second_level_objects": [
+      {
+        "id": "feature_timeline_ecommerce",
+        "name": "ECommerce Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureTimelineECommerceTimeline1Activity",
+            "name": "Timeline 1",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_timeline_general",
+        "name": "General Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureTimelineGeneralTimeline1Activity",
+            "name": "Timeline 1",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_timeline_social",
+        "name": "Social Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureTimelineSocialTimeline1Activity",
+            "name": "Timeline 1",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "feature_timeline_news",
+        "name": "News Concept",
+        "image_name": "",
+        "is_new": "true",
+        "third_level_objects": [
+          {
+            "id": "FeatureTimelineNewsTimeline1Activity",
+            "name": "Timeline 1",
+            "image_name": "",
+            "is_new": "true"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_verification",
+    "name": "Verification UI Collection",
+    "image_name": "baseline_verification_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_verification_general",
+        "name": "General Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureVerificationGeneralVerification1Activity",
+            "name": "Verification 1",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureVerificationGeneralVerification2Activity",
+            "name": "Verification 2",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "FeatureVerificationGeneralVerification3Activity",
+            "name": "Verification 3",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature_walkthrought",
+    "name": "Walkthrought UI Collection",
+    "image_name": "baseline_walkthrough_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "feature_walkthrought_general",
+        "name": "General Concept",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "FeatureWalkthroughGeneralWalkthrough1Activity",
+            "name": "Walkthrough 1 (Welcome Sliders)",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  }
+]

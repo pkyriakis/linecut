@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_category"
+            android:title="Categories" />
+    </group>
+
+
+    <group
+        android:id="@+id/grp2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_feature"
+            android:title="Featured News" />
+        <item
+            android:id="@+id/nav_popular"
+            android:title="Popular News" />
+        <item
+            android:id="@+id/nav_recent"
+            android:title="Recent News" />
+        <item
+            android:id="@+id/nav_search"
+            android:title="Search News" />
+
+    </group>
+
+
+    <group
+        android:id="@+id/grp3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_favourite"
+            android:title="Favourite" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+    </group>
+
+
+    <group
+        android:id="@+id/grp4"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_about_us"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_contact_us"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_setting"
+            android:title="Setting" />
+    </group>
+
+
+</menu>

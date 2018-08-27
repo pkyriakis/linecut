@@ -1,0 +1,948 @@
+[
+  {
+    "id": "buttons",
+    "name": "Buttons",
+    "image_name": "baseline_button_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "ui_button",
+        "name": "Button",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiButtonBasicButtonActivity",
+            "name": "Basic Button",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiButtonIconActivity",
+            "name": "Button With Icons",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiButtonRoundedButtonActivity",
+            "name": "Rounded Button",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_checkbox",
+        "name": "Checkbox",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiButtonBasicCheckboxActivity",
+            "name": "Basic Checkbox",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiButtonRoundedCheckboxActivity",
+            "name": "Rounded Checkbox",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_fab",
+        "name": "Floating Action Button",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiButtonBasicFABActivity",
+            "name": "Basic FAB",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiButtonHorizontalSubMenuFabActivity",
+            "name": "Horizontal SubMenu FAB",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiButtonSubMenuFabActivity",
+            "name": "SubMenu FAB without Text",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiButtonSubMenuWithTextFabActivity",
+            "name": "SubMenu FAB with Text",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_imagebutton",
+        "name": "Image Button",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiButtonBasicImageButtonActivity",
+            "name": "Basic Image Button",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_radiobutton",
+        "name": "Radio Button",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiButtonBasicRadioButtonActivity",
+            "name": "Basic Radio Button",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiButtonCustomRadioButtonActivity",
+            "name": "Custom Radio Button",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_switchbutton",
+        "name": "Switch Button",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiButtonBasicSwitchActivity",
+            "name": "Basic Switch",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_togglebutton",
+        "name": "Toggle Button",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiButtonBasicToggleButtonActivity",
+            "name": "Basic Toggle Button",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ui_container",
+    "name": "Container",
+    "image_name": "baseline_container_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "ui_appbarlayout",
+        "name": "Appbar Layout",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiContainerBasicAppbarLayoutActivity",
+            "name": "Basic Appbar Layout",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiContainerCollapsingAppbarLayoutActivity",
+            "name": "Collapsing Appbar Layout",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_bottomnavigation",
+        "name": "Bottom Navigation View",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiContainerBasicBottomNavigationViewActivity",
+            "name": "Basic Bottom Navigation View",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiContainerBottomNavigationViewFabActivity",
+            "name": "Bottom Navigation View with FAB",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_bottomsheet",
+        "name": "Bottom Sheet",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiContainerBasicBottomSheetActivity",
+            "name": "Basic Bottom Sheet",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiContainerBottomSheetDialogActivity",
+            "name": "Bottom Sheet Dialog",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_cardview",
+        "name": "CardView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiContainerBasicCardViewActivity",
+            "name": "Basic CardView",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_drawermenu",
+        "name": "Drawer Menu",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiContainerBasicDrawerMenuActivity",
+            "name": "Basic Drawer Menu",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_fragment",
+        "name": "Fragment",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiContainerBasicFragmentActivity",
+            "name": "Basic Fragment",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_include",
+        "name": "Include",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiContainerBasicIncludeActivity",
+            "name": "Basic",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_recycler",
+        "name": "RecyclerView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiContainerRecyclerViewListActivity",
+            "name": "Recycler View List",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiContainerRecyclerViewGridActivity",
+            "name": "Recycler View Grid",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_requestfocus",
+        "name": "Request Focus",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiContainerBasicRequestFocusActivity",
+            "name": "Basic Request Focus",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiContainerRequestFocusCodeActivity",
+            "name": "Request Focus via Code",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_scrollview",
+        "name": "ScrollView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiContainerHorizontalScrollViewActivity",
+            "name": "Horizontal ScrollView",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiContainerVerticalScrollViewActivity",
+            "name": "Vertical ScrollView",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiContainerNestedScrollViewActivity",
+            "name": "Nested ScrollView",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_spinner",
+        "name": "Spinner",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiContainerBasicSpinnerActivity",
+            "name": "Basic Spinner",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiContainerCustomSpinnerActivity",
+            "name": "Custom Spinner",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+
+
+      {
+        "id": "ui_tablayout",
+        "name": "TabLayout",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiContainerBasicTabLayoutActivity",
+            "name": "Basic TabLayout",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiContainerScrollableTabLayoutActivity",
+            "name": "Scrollable TabLayout",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiContainerStickyTabLayoutActivity",
+            "name": "Sticky TabLayout",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_viewstub",
+        "name": "ViewStub",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiContainerBasicViewStubActivity",
+            "name": "Basic ViewStub",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+
+    ]
+  },
+
+  {
+    "id": "ui_google",
+    "name": "Google",
+    "image_name": "baseline_google_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "ui_adview",
+        "name": "AdView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiGoogleAdviewBannerActivity",
+            "name": "AdView Banner",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiGoogleAdViewFullScreenActivity",
+            "name": "AdView Fullscreen",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_flexbox",
+        "name": "FlexBox",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiGoogleFlexBoxDirectionActivity",
+            "name": "FlexBox Direction",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiGoogleFlexBoxAdjustmentActivity",
+            "name": "FlexBox Adjustment",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_mapview",
+        "name": "MapView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiGoogleBasicMapViewActivity",
+            "name": "Basic MapView",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiGoogleMapViewCustomPinActivity",
+            "name": "MapView with Custom Pin",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiGoogleSupportMapFragmentActivity",
+            "name": "Support Map Fragment",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+
+    ]
+  },
+
+  {
+    "id": "ui_layout",
+    "name": "Layout",
+    "image_name": "baseline_layout_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+
+      {
+        "id": "ui_constraint_layout",
+        "name": "Constraint Layout",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiLayoutConstraintLayoutBasicActivity",
+            "name": "Basic Constraint Layout",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiLayoutConstraintLayoutAdjustViewActivity",
+            "name": "Adjust View",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiLayoutConstraintLayoutChainActivity",
+            "name": "Chain",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_frame_layout",
+        "name": "Frame Layout",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiLayoutFrameLayoutBasicActivity",
+            "name": "Basic Frame Layout",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_linear_layout",
+        "name": "Linear Layout",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiLayoutLinearLayoutBasicActivity",
+            "name": "Basic Linear Layout",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+
+      {
+        "id": "ui_table_layout",
+        "name": "Table Layout",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiLayoutTableLayoutBasicActivity",
+            "name": "Basic Table Layout",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ui_legacy",
+    "name": "Legacy",
+    "image_name": "baseline_legacy_whtie_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "ui_gridlayout",
+        "name": "GridLayout",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiLegacyGridLayoutBasicActivity",
+            "name": "Basic GridLayout",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_gridview",
+        "name": "GridView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiLegacyGridViewBasicActivity",
+            "name": "Basic GridView",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_listview",
+        "name": "ListView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiLegacyListViewBasicActivity",
+            "name": "Basic ListView",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiLegacyListViewCustomActivity",
+            "name": "Custom ListView",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+
+      {
+        "id": "ui_relativelayout",
+        "name": "RelativeLayout",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiLegacyRelativeLayoutBasicActivity",
+            "name": "Basic Relative Layout",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ui_text",
+    "name": "Text",
+    "image_name": "baseline_text_fields_black_24",
+    "is_new": "false",
+    "second_level_objects": [
+
+      {
+        "id": "ui_edittext",
+        "name": "Edit Text",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiTextEditTextBasicActivity",
+            "name": "Basic EditText",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiTextEditTextDatetimeActivity",
+            "name": "Date Time And Number EditText",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_textview",
+        "name": "TextView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiTextTextViewAdvancedActivity",
+            "name": "Advanced TextView",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiTextTextViewBasicActivity",
+            "name": "Basic TextView",
+            "image_name": "",
+            "is_new": "false"
+          }
+
+        ]
+      }
+
+    ]
+  },
+  {
+    "id": "ui_widgets",
+    "name": "Widgets",
+    "image_name": "baseline_calendar_white_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "ui_calendar",
+        "name": "Calendar And Date Picker",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiWidgetCalendarBasicActivity",
+            "name": "Basic Calendar",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiWidgetDatePickerActivity",
+            "name": "DatePicker",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiWidgetTimePickerActivity",
+            "name": "TimePicker",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_dialog",
+        "name": "Dialog",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiWidgetDialogAlertActivity",
+            "name": "Alert Dialog",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiWidgetDialogConfirmActivity",
+            "name": "Confirm Dialog",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiWidgetDialogCustomActivity",
+            "name": "Custom Dialog",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiWidgetDialogInfoActivity",
+            "name": "Info Dialog",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiWidgetDialogMultiChoiceActivity",
+            "name": "Multi Choice Dialog",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiWidgetDialogSingleChoiceActivity",
+            "name": "Single Choice Dialog",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiWidgetDialogSuccessActivity",
+            "name": "Success Dialog",
+            "image_name": "",
+            "is_new": "false"
+          }
+
+        ]
+      },
+      {
+        "id": "ui_imageview",
+        "name": "ImageView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiWidgetImageViewBasicActivity",
+            "name": "Basic ImageView",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiWidgetImageViewCircleShapeActivity",
+            "name": "Circle Shape",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiWidgetImageViewScaleTypeActivity",
+            "name": "Scale Type",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_progressbar",
+        "name": "ProgressBar",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiWidgetProgressBarBasicActivity",
+            "name": "Basic ProgressBar",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiWidgetProgressBarHorizontalActivity",
+            "name": "Horizontal ProgressBar",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_ratingbar",
+        "name": "RatingBar",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiWidgetRatingBarBasicActivity",
+            "name": "Basic RatingBar",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_searchview",
+        "name": "SearchView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiWidgetSearchViewBasicActivity",
+            "name": "Basic SearchView",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_seekbar",
+        "name": "SeekBar",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiWidgetSeekBarBasicActivity",
+            "name": "Basic SeekBar",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiWidgetSeekBarDiscreteActivity",
+            "name": "SeekBar(Discrete)",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_snackbar",
+        "name": "SnackBar",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiWidgetSnackBarActionButtonActivity",
+            "name": "SnackBar with Action Button",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiWidgetSnackBarBasicActivity",
+            "name": "Basic SnackBar",
+            "image_name": "",
+            "is_new": "false"
+          },
+
+          {
+            "id": "UiWidgetSnackBarCustomColorActivity",
+            "name": "SnackBar with Custom Color",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_surfaceview",
+        "name": "Surface View",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiWidgetSurfaceViewBasicActivity",
+            "name": "Basic",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_textureview",
+        "name": "TextureView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiWidgetTextureViewBasicActivity",
+            "name": "Basic",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "UiWidgetVideoViewBasicActivity",
+        "name": "VideoView with Web Url",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+
+      {
+        "id": "ui_webview",
+        "name": "WebView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiWidgetWebViewBasicActivity",
+            "name": "Basic WebView",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiWidgetWebViewYouTubeActivity",
+            "name": "YouTube Video in WebView",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+
+
+
+
+
+    ]
+  }
+]

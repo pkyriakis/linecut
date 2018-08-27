@@ -1,0 +1,62 @@
+[
+  {
+    "name" : "ATMs",
+    "image" : "atm",
+    "color" : "#c42e2e"
+  },
+  {
+    "name" : "Banks",
+    "image" : "bank",
+    "color" : "#b50b5c"
+  },
+  {
+    "name" : "Books",
+    "image" : "book",
+    "color" : "#7800a5"
+  },
+  {
+    "name" : "Bus Stops",
+    "image" : "bus_stop",
+    "color" : "#5618ab"
+  },
+  {
+    "name" : "Cafes",
+    "image" : "cafe",
+    "color" : "#3e35a2"
+  },
+  {
+    "name" : "Car Wash",
+    "image" : "car_wash",
+    "color" : "#466fd5"
+  },
+  {
+    "name" : "Dentists",
+    "image" : "dentists",
+    "color" : "#4683d4"
+  },
+  {
+    "name" : "Doctors",
+    "image" : "doctor",
+    "color" : "#4196a8"
+  },
+  {
+    "name" : "Restaurant",
+    "image" : "restaurant",
+    "color" : "#2e7a6a"
+  },
+  {
+    "name" : "Petrol Pumps",
+    "image" : "petrol",
+    "color" : "#2b6559"
+  },
+  {
+    "name" : "Groceries",
+    "image" : "grocery",
+    "color" : "#abb710"
+  },
+  {
+    "name" : "Gyms",
+    "image" : "gym",
+    "color" : "#e67e00"
+  }
+]

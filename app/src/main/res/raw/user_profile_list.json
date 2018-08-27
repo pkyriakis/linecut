@@ -1,0 +1,34 @@
+[
+  {
+    "image":"profile1",
+    "name":"Oliver"
+  },
+  {
+    "image":"profile2",
+    "name":"George"
+  },
+  {
+    "image":"man_profile",
+    "name":"Harry"
+  },
+  {
+    "image":"woman_profile",
+    "name":"Jack"
+  },
+  {
+    "image":"profile1",
+    "name":"Jacob"
+  },
+  {
+    "image":"profile2",
+    "name":"Charlie"
+  },
+  {
+    "image":"man_profile",
+    "name":"Noah"
+  },
+  {
+    "image":"woman_profile",
+    "name":"Joshua"
+  }
+]

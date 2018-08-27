@@ -1,0 +1,200 @@
+[
+  {
+    "id":"Kid",
+    "name":"Infant plushee bear hoodie",
+    "image":"kid_cloth_1",
+    "currency":"$",
+    "price":"200",
+    "original_price":"240",
+    "category_name":"Clothing",
+    "rating_count":"88",
+    "total_rating":"4.5",
+    "discount":"20",
+    "is_liked":"false",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tellus orci.",
+    "image_list":[
+      {
+        "image_name":"kid_cloth_1"
+      },
+      {
+        "image_name":"kid_cloth_2"
+      },
+      {
+        "image_name":"kid_cloth_3"
+      }
+    ],
+    "shop" : {
+        "shop_name":"Nike",
+        "shop_email":"teamps.is.cool@gmail.com",
+        "shop_phone":"+957777777",
+        "shop_website":"www.panacea-soft.com",
+        "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+      },
+    "view_count":"2500"
+  },
+  {
+    "id":"Kid",
+    "name":"Sxsw taco truck toddler tee",
+    "image":"kid_cloth_2",
+    "currency":"$",
+    "price":"200",
+    "original_price":"240",
+    "category_name":"Clothing",
+    "rating_count":"35",
+    "total_rating":"5",
+    "discount":"20",
+    "is_liked":"false",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tellus orci.",
+    "image_list":[
+      {
+        "image_name":"kid_cloth_1"
+      },
+      {
+        "image_name":"kid_cloth_2"
+      },
+      {
+        "image_name":"kid_cloth_3"
+      }
+    ],
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    },
+    "view_count":"3000"
+  },
+  {
+    "id":"Kid",
+    "name":"toddlers' synchilla fleece vest",
+    "image":"kid_cloth_3",
+    "currency":"$",
+    "price":"200",
+    "original_price":"240",
+    "category_name":"Clothing",
+    "rating_count":"64",
+    "total_rating":"4.5",
+    "discount":"20",
+    "is_liked":"false",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tellus orci.",
+    "image_list":[
+      {
+        "image_name":"kid_cloth_1"
+      },
+      {
+        "image_name":"kid_cloth_2"
+      },
+      {
+        "image_name":"kid_cloth_3"
+      }
+    ],
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    },
+    "view_count":"2500"
+  },
+  {
+    "id":"Kid",
+    "name":"Toddlers' long sleeve - Austin",
+    "image":"kid_cloth_4",
+    "currency":"$",
+    "price":"200",
+    "original_price":"240",
+    "category_name":"Clothing",
+    "rating_count":"55",
+    "total_rating":"5",
+    "discount":"20",
+    "is_liked":"false",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tellus orci.",
+    "image_list":[
+      {
+        "image_name":"kid_cloth_1"
+      },
+      {
+        "image_name":"kid_cloth_2"
+      },
+      {
+        "image_name":"kid_cloth_3"
+      }
+    ],
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    },
+    "view_count":"3500"
+  },
+  {
+    "id":"Kid",
+    "name":"Infant oso hoodie",
+    "image":"kid_cloth_5",
+    "currency":"$",
+    "price":"200",
+    "original_price":"240",
+    "category_name":"Clothing",
+    "rating_count":"33",
+    "total_rating":"4.5",
+    "discount":"20",
+    "is_liked":"false",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tellus orci.",
+    "image_list":[
+      {
+        "image_name":"kid_cloth_1"
+      },
+      {
+        "image_name":"kid_cloth_2"
+      },
+      {
+        "image_name":"kid_cloth_3"
+      }
+    ],
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    },
+    "view_count":"500"
+  },
+  {
+    "id":"Kid",
+    "name":"Tooddler tcu arch tee",
+    "image":"kid_cloth_6",
+    "currency":"$",
+    "price":"200",
+    "original_price":"240",
+    "category_name":"Clothing",
+    "rating_count":"47",
+    "total_rating":"4.5",
+    "discount":"20",
+    "is_liked":"false",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tellus orci.",
+    "image_list":[
+      {
+        "image_name":"kid_cloth_1"
+      },
+      {
+        "image_name":"kid_cloth_2"
+      },
+      {
+        "image_name":"kid_cloth_3"
+      }
+    ],
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    },
+    "view_count":"4000"
+  }
+]

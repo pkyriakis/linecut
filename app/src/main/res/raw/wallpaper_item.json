@@ -1,0 +1,80 @@
+[
+  {
+    "name":"image1",
+    "image":"gallery_bird_2",
+    "likeCount":"2.3K",
+    "viewCount":"4.2K",
+    "user" : {
+      "user_name":"Oliver",
+      "ago":"2 hours ago",
+      "user_image":"user_profile_man"
+    }
+  },
+  {
+    "name":"image2",
+    "image":"gallery_bird_3",
+    "likeCount":"1.3K",
+    "viewCount":"3.2K",
+    "user" : {
+      "user_name":"Harry",
+      "ago":"3 hours ago",
+      "user_image":"profile1"
+    }
+  },
+  {
+    "name":"image3",
+    "image":"gallery_tiger_3",
+    "likeCount":"1.1K",
+    "viewCount":"3.8K",
+    "user" : {
+      "user_name":"Jacob",
+      "ago":"3 hours ago",
+      "user_image":"profile2"
+    }
+  },
+  {
+    "name":"image4",
+    "image":"gallery_tiger_4",
+    "likeCount":"2.2K",
+    "viewCount":"3.6K",
+    "user" : {
+      "user_name":"Oliver",
+      "ago":"5 hours ago",
+      "user_image":"user_profile_man"
+    }
+  },
+  {
+    "name":"image5",
+    "image":"gallery_bird_8",
+    "likeCount":"6.3K",
+    "viewCount":"8.2K",
+    "user" : {
+      "user_name":"Harry",
+      "ago":"5 hours ago",
+      "user_image":"profile1"
+    }
+  },
+  {
+    "name":"image6",
+    "image":"gallery_fish_2",
+    "likeCount":"1.3K",
+    "viewCount":"6.2K",
+    "user" : {
+      "user_name":"Jacob",
+      "ago":"6 hours ago",
+      "user_image":"profile2"
+    }
+  },
+  {
+    "name":"image7",
+    "image":"gallery_fish_3",
+    "likeCount":"10.3K",
+    "viewCount":"13.2K",
+    "user" : {
+      "user_name":"Oliver",
+      "ago":"6 hours ago",
+      "user_image":"user_profile_man"
+    }
+  }
+
+]

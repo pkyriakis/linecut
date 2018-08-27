@@ -1,0 +1,22 @@
+[
+  {
+    "name":"Men Fashion",
+    "image":"men_category",
+    "count":"200"
+  },
+  {
+    "name":"Women Fashion",
+    "image":"women_category",
+    "count":"300"
+  },
+  {
+    "name":"Kids Fashion",
+    "image":"kids_fashion",
+    "count":"240"
+  },
+  {
+    "name":"Sport Ware Fashion",
+    "image":"sport_fashion",
+    "count":"250"
+  }
+]

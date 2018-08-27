@@ -1,0 +1,1511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mylinecut.linecut">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.panaceasoft.awesomematerial.AwesomeMaterials"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name="com.panaceasoft.awesomematerial.utils.PSFirebaseMessagingService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDNVK1Q4rVL8Za6wc6pqB_eKNIJqrzuv94" />
+
+        <activity
+            android:name="com.mylinecut.linecut.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.mylinecut.linecut.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.mylinecut.linecut.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.mylinecut.linecut.SignupActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mylinecut.linecut.ForgotPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+
+
+        <!--
+        <activity
+            android:name=".activity.MainAboutUs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.button.button.UiButtonBasicButtonActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.text.textview.UiTextTextViewBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.text.edittext.UiTextEditTextBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.text.edittext.UiTextEditTextDatetimeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.text.textview.UiTextTextViewAdvancedActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.dialog.UiWidgetDialogSuccessActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.dialog.UiWidgetDialogConfirmActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.dialog.UiWidgetDialogAlertActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.dialog.UiWidgetDialogInfoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.dialog.UiWidgetDialogSingleChoiceActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.dialog.UiWidgetDialogMultiChoiceActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.dialog.UiWidgetDialogCustomActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.textureview.UiWidgetTextureViewBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.requestfocus.UiContainerBasicRequestFocusActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.fragment.UiContainerBasicFragmentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.include.UiContainerBasicIncludeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.requestfocus.UiContainerRequestFocusCodeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.google.adview.UiGoogleAdviewBannerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.google.adview.UiGoogleAdViewFullScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.google.mapview.UiGoogleSupportMapFragmentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.google.mapview.UiGoogleMapViewCustomPinActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.google.mapview.UiGoogleBasicMapViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.ratingbar.UiWidgetRatingBarBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.searchview.UiWidgetSearchViewBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.snackbar.UiWidgetSnackBarBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.snackbar.UiWidgetSnackBarActionButtonActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.snackbar.UiWidgetSnackBarCustomColorActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.spinner.UiContainerBasicSpinnerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.spinner.UiContainerCustomSpinnerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.viewstub.UiContainerBasicViewStubActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.bottomsheet.UiContainerBasicBottomSheetActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.bottomsheet.UiContainerBottomSheetDialogActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.scrollview.UiContainerVerticalScrollViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.scrollview.UiContainerNestedScrollViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.scrollview.UiContainerHorizontalScrollViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.cardview.UiContainerBasicCardViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.bottomnavigationview.UiContainerBasicBottomNavigationViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.bottomnavigationview.UiContainerBottomNavigationViewFabActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.legacy.listview.UiLegacyListViewBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.legacy.listview.UiLegacyListViewCustomActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.recyclerview.UiContainerRecyclerViewListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.recyclerview.UiContainerRecyclerViewGridActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.google.flexbox.UiGoogleFlexBoxDirectionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.google.flexbox.UiGoogleFlexBoxAdjustmentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.legacy.relativelayout.UiLegacyRelativeLayoutBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.legacy.gridlayout.UiLegacyGridLayoutBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.legacy.gridview.UiLegacyGridViewBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.tablayout.UiContainerBasicTabLayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.tablayout.UiContainerScrollableTabLayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.tablayout.UiContainerStickyTabLayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.placelist.AppDirectoryPlaceList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.placelist.AppDirectoryPlaceList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.placelist.AppDirectoryPlaceList3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.placelist.AppDirectoryPlaceList4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.placelist.AppDirectoryPlaceList5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.placelist.AppDirectoryPlaceList6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.placelist.AppDirectoryPlaceList7Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.placelist.AppDirectoryPlaceList8Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.placelist.AppDirectoryPlaceList9Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.countrylist.AppDirectoryCountryList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.countrylist.AppDirectoryCountryList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.countrylist.AppDirectoryCountryList3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.countrylist.AppDirectoryCountryList4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.detail.AppDirectoryDetail1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.detail.AppDirectoryDetail2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.detail.AppDirectoryDetail3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.detail.AppDirectoryDetail4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.checkout.AppECommerceCheckout1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.layout.linear.UiLayoutLinearLayoutBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.button.button.UiButtonIconActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.button.button.UiButtonRoundedButtonActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.imageview.UiWidgetImageViewBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.imageview.UiWidgetImageViewScaleTypeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.imageview.UiWidgetImageViewCircleShapeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.button.checkbox.UiButtonBasicCheckboxActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.button.checkbox.UiButtonRoundedCheckboxActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.webview.UiWidgetWebViewBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.webview.UiWidgetWebViewYouTubeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.videoview.UiWidgetVideoViewBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.button.radio.UiButtonBasicRadioButtonActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.calendaranddate.UiWidgetCalendarBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.calendaranddate.UiWidgetDatePickerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.calendaranddate.UiWidgetTimePickerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.progressbar.UiWidgetProgressBarBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.progressbar.UiWidgetProgressBarHorizontalActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.button.radio.UiButtonCustomRadioButtonActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.button.toggle.UiButtonBasicToggleButtonActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.button.switchbutton.UiButtonBasicSwitchActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.button.fab.UiButtonBasicFABActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.button.fab.UiButtonSubMenuFabActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.button.fab.UiButtonSubMenuWithTextFabActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.button.fab.UiButtonHorizontalSubMenuFabActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.layout.constraint.UiLayoutConstraintLayoutBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.layout.constraint.UiLayoutConstraintLayoutAdjustViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.layout.constraint.UiLayoutConstraintLayoutChainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.surfaceview.UiWidgetSurfaceViewBasicActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.button.imagebutton.UiButtonBasicImageButtonActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.appbarlayout.UiContainerBasicAppbarLayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.appbarlayout.UiContainerCollapsingAppbarLayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.seekbar.UiWidgetSeekBarBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.widget.seekbar.UiWidgetSeekBarDiscreteActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.layout.framelayout.UiLayoutFrameLayoutBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.layout.table.UiLayoutTableLayoutBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.uicollection.container.drawermenu.UiContainerBasicDrawerMenuActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.placegrid.AppDirectoryPlaceGrid1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.placegrid.AppDirectoryPlaceGrid2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.placegrid.AppDirectoryPlaceGrid3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.placegrid.AppDirectoryPlaceGrid4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.placegrid.AppDirectoryPlaceGrid5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.placegrid.AppDirectoryPlaceGrid6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.placemap.AppDirectoryPlaceMap1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.placemap.AppDirectoryPlaceMap2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.placemap.AppDirectoryPlaceMap3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.placemap.AppDirectoryPlaceMap4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.filter.AppDirectoryFilter1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.home.AppECommerceHome1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.home.AppECommerceHome2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.home.AppECommerceHome3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.home.AppECommerceHome4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.filter.AppDirectoryFilter2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.filter.AppDirectoryFilter3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.filter.AppDirectoryFilter4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.gallery.AppDirectoryGallery1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.gallery.AppDirectoryGallery2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.gallery.AppDirectoryGallery3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.gallery.AppDirectoryGallery4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.home.AppDirectoryHome1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.home.AppDirectoryHome2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.home.AppDirectoryHome3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.home.AppDirectoryHome4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.home.AppDirectoryHome5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.home.AppDirectoryHome6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.home.AppDirectoryHome7Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.home.AppDirectoryHome8Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.profile.AppDirectoryProfile1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.profile.AppDirectoryProfile2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.profile.AppDirectoryProfile3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.directory.profile.AppDirectoryProfile4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.filter.AppECommerceFilter1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.filter.AppECommerceFilter2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.filter.AppECommerceFilter3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.filter.AppECommerceFilter4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.detail.AppECommerceDetail1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.detail.AppECommerceDetail2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.detail.AppECommerceDetail3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.detail.AppECommerceDetail4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.detail.AppECommerceDetail5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.list.AppECommerceList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.list.AppECommerceList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.list.AppECommerceList3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.list.AppECommerceList4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.list.AppECommerceList5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.list.AppECommerceList6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.list.AppECommerceList7Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.list.AppECommerceList8Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.checkout.AppECommerceCheckout2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.checkout.AppECommerceCheckout3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.checkout.AppECommerceCheckout4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.checkout.AppECommerceCheckout5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.checkout.AppECommerceCheckout6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.basket.AppECommerceBasket1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.basket.AppECommerceBasket2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.basket.AppECommerceBasket3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.basket.AppECommerceBasket4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.shopinfo.AppECommerceShopInfo1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.shopinfo.AppECommerceShopInfo2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.order.AppECommerceOrder1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.order.AppECommerceOrder2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.order.AppECommerceOrder3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.order.AppECommerceOrder4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.profile.AppECommerceProfile1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.gallery.AppECommerceGallery1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.gallery.AppECommerceGallery2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.gallery.AppECommerceGallery3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.grid.AppECommerceGrid1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.grid.AppECommerceGrid2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.grid.AppECommerceGrid3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.grid.AppECommerceGrid4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.grid.AppECommerceGrid5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.grid.AppECommerceGrid6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.grid.AppECommerceGrid7Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.grid.AppECommerceGrid8Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.grid.AppECommerceGrid11Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.grid.AppECommerceGrid9Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.grid.AppECommerceGrid10Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.category.AppECommerceCategory1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.category.AppECommerceCategory2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.category.AppECommerceCategory3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.ecommerce.category.AppECommerceCategory4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.wallpaper.home.AppWallpaperHome1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.wallpaper.home.AppWallpaperHome2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.wallpaper.home.AppWallpaperHome3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.wallpaper.home.AppWallpaperHome4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.wallpaper.grid.AppWallpaperGrid1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.wallpaper.grid.AppWallpaperGrid2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.wallpaper.grid.AppWallpaperGrid3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.wallpaper.grid.AppWallpaperGrid4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.wallpaper.grid.AppWallpaperGrid5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.wallpaper.grid.AppWallpaperGrid6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.wallpaper.list.AppWallpaperList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.wallpaper.list.AppWallpaperList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.wallpaper.list.AppWallpaperList3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.wallpaper.category.AppWallpaperCategory1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.wallpaper.category.AppWallpaperCategory2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.wallpaper.category.AppWallpaperCategory3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.wallpaper.category.AppWallpaperCategory4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.wallpaper.detail.AppWallpaperDetail1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.wallpaper.detail.AppWallpaperDetail2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".activity.application.wallpaper.list.AppWallpaperList4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.user.profile.AppUserProfile1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.user.profile.AppUserProfile2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.user.profile.AppUserProfile3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.user.profile.AppUserProfile4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.user.login.AppUserLogin1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.user.login.AppUserLogin2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.user.login.AppUserLogin3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.user.login.AppUserLogin4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.user.signup.AppUserSignUp1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.user.signup.AppUserSignUp2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.user.signup.AppUserSignUp3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.user.signup.AppUserSignUp4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.user.forgotpassword.AppUserForgotPassword1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.user.forgotpassword.AppUserForgotPassword2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.user.forgotpassword.AppUserForgotPassword3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.application.user.forgotpassword.AppUserForgotPassword4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".activity.feature.dashboard.directory.FeatureDashboardDirectoryDashboard1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.dashboard.directory.FeatureDashboardDirectoryDashboard2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.dashboard.directory.FeatureDashboardDirectoryDashboard3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.dashboard.directory.FeatureDashboardDirectoryDashboard4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.dashboard.directory.FeatureDashboardDirectoryDashboard5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.dashboard.directory.FeatureDashboardDirectoryDashboard6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.dashboard.directory.FeatureDashboardDirectoryDashboard7Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.dashboard.directory.FeatureDashboardDirectoryDashboard8Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.dashboard.finance.FeatureDashboardFinanceDashboard1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.dashboard.finance.FeatureDashboardFinanceDashboard2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".activity.feature.dashboard.ecommerce.FeatureDashboardECommerceDashboard1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.dashboard.ecommerce.FeatureDashboardECommerceDashboard2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.dashboard.ecommerce.FeatureDashboardECommerceDashboard3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.dashboard.ecommerce.FeatureDashboardECommerceDashboard4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.dashboard.wallpaper.FeatureDashboardWallpaperDashboard1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.dashboard.wallpaper.FeatureDashboardWallpaperDashboard2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.dashboard.wallpaper.FeatureDashboardWallpaperDashboard3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.dashboard.wallpaper.FeatureDashboardWallpaperDashboard4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.list.directory.FeatureListDirectoryPlaceList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.directory.FeatureListDirectoryPlaceList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.directory.FeatureListDirectoryPlaceList3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.directory.FeatureListDirectoryPlaceList4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.directory.FeatureListDirectoryPlaceList5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.directory.FeatureListDirectoryPlaceList6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.directory.FeatureListDirectoryPlaceList7Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.directory.FeatureListDirectoryPlaceList8Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.directory.FeatureListDirectoryPlaceList9Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.list.directory.FeatureListDirectoryCityList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.directory.FeatureListDirectoryCityList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.directory.FeatureListDirectoryCityList3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.directory.FeatureListDirectoryCityList4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.list.ecommerce.FeatureListECommerceItemList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.ecommerce.FeatureListECommerceItemList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.ecommerce.FeatureListECommerceItemList3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.ecommerce.FeatureListECommerceItemList4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.ecommerce.FeatureListECommerceItemList5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.ecommerce.FeatureListECommerceItemList6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.ecommerce.FeatureListECommerceItemList7Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.ecommerce.FeatureListECommerceItemList8Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.ecommerce.FeatureListECommerceCategoryList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.ecommerce.FeatureListECommerceCategoryList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.list.wallpaper.FeatureListWallpaperPhotoList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.wallpaper.FeatureListWallpaperPhotoList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.wallpaper.FeatureListWallpaperPhotoList3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.wallpaper.FeatureListWallpaperPhotoList4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.wallpaper.FeatureListWallpaperCategoryList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.wallpaper.FeatureListWallpaperCategoryList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.grid.directory.FeatureGridDirectoryPlaceGrid1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.directory.FeatureGridDirectoryPlaceGrid2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.directory.FeatureGridDirectoryPlaceGrid3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.directory.FeatureGridDirectoryPlaceGrid4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.directory.FeatureGridDirectoryPlaceGrid5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.directory.FeatureGridDirectoryPlaceGrid6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.directory.FeatureGridDirectoryCityGrid1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid7Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid8Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid9Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid10Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid11Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.ecommerce.FeatureGridECommerceCategoryGrid1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.ecommerce.FeatureGridECommerceCategoryGrid2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.grid.wallpaper.FeatureGridWallpaperPhotoGrid1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.wallpaper.FeatureGridWallpaperPhotoGrid2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.wallpaper.FeatureGridWallpaperPhotoGrid3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.wallpaper.FeatureGridWallpaperPhotoGrid4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.wallpaper.FeatureGridWallpaperPhotoGrid5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.wallpaper.FeatureGridWallpaperPhotoGrid6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.wallpaper.FeatureGridWallpaperCategoryGrid1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.grid.wallpaper.FeatureGridWallpaperCategoryGrid2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.detail.directory.FeatureDetailDirectoryPlaceDetail1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.detail.directory.FeatureDetailDirectoryPlaceDetail2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.detail.directory.FeatureDetailDirectoryPlaceDetail3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.detail.directory.FeatureDetailDirectoryPlaceDetail4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.detail.ecommerce.FeatureDetailECommerceItemDetail1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.detail.ecommerce.FeatureDetailECommerceItemDetail2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.detail.ecommerce.FeatureDetailECommerceItemDetail3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.detail.ecommerce.FeatureDetailECommerceItemDetail4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.detail.ecommerce.FeatureDetailECommerceItemDetail5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.detail.wallpaper.FeatureDetailWallpaperPhotoDetail1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.detail.wallpaper.FeatureDetailWallpaperPhotoDetail2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.basket.FeatureBasketECommerceBasket1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.basket.FeatureBasketECommerceBasket2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.basket.FeatureBasketECommerceBasket3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.basket.FeatureBasketECommerceBasket4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.checkout.FeatureCheckoutECommerceCheckout1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.checkout.FeatureCheckoutECommerceCheckout2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.checkout.FeatureCheckoutECommerceCheckout3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.checkout.FeatureCheckoutECommerceCheckout4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.checkout.FeatureCheckoutECommerceCheckout5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.checkout.FeatureCheckoutECommerceCheckout6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.order.ecommerce.FeatureOrderECommerceOrder1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.order.ecommerce.FeatureOrderECommerceOrder2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.order.ecommerce.FeatureOrderECommerceOrder3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.order.ecommerce.FeatureOrderECommerceOrder4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.filter.directory.FeatureFilterDirectoryFilter1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.filter.directory.FeatureFilterDirectoryFilter2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.filter.directory.FeatureFilterDirectoryFilter3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.filter.directory.FeatureFilterDirectoryFilter4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.filter.ecommerce.FeatureFilterECommerceFilter1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.filter.ecommerce.FeatureFilterECommerceFilter2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.filter.ecommerce.FeatureFilterECommerceFilter3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.filter.ecommerce.FeatureFilterECommerceFilter4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.gallery.directory.FeatureGalleryDirectoryGallery1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.gallery.directory.FeatureGalleryDirectoryGallery2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.gallery.directory.FeatureGalleryDirectoryGallery3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.gallery.directory.FeatureGalleryDirectoryGallery4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.gallery.ecommerce.FeatureGalleryECommerceGallery1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.gallery.ecommerce.FeatureGalleryECommerceGallery2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.gallery.ecommerce.FeatureGalleryECommerceGallery3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.map.directory.FeatureMapDirectoryMap1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.map.directory.FeatureMapDirectoryMap2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.map.directory.FeatureMapDirectoryMap3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.map.directory.FeatureMapDirectoryMap4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.profile.general.FeatureProfileGeneralProfile1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.profile.general.FeatureProfileGeneralProfile2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.profile.general.FeatureProfileGeneralProfile3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.profile.general.FeatureProfileGeneralProfile4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.profile.directory.FeatureProfileDirectoryProfile1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.profile.directory.FeatureProfileDirectoryProfile2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.profile.directory.FeatureProfileDirectoryProfile3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.profile.directory.FeatureProfileDirectoryProfile4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.profile.ecommerce.FeatureProfileECommerceProfile1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.profile.ecommerce.FeatureProfileECommerceProfile2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.profile.ecommerce.FeatureProfileECommerceProfile3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.payment.ecommerce.FeaturePaymentECommerceCardEntry1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.payment.ecommerce.FeaturePaymentECommerceCardOptions1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.list.general.FeatureListGeneralExpandableListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.general.FeatureListGeneralDragAndDropListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.general.FeatureListGeneralSwipeToDismissListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.general.FeatureListGeneralSectionedListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.list.general.FeatureListGeneralStickyHeaderListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.media.general.FeatureMediaGeneralMP3Player1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.media.general.FeatureMediaGeneralMP3Player2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.media.general.videoplayer1.FeatureMediaGeneralVideoPlayer1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.media.general.videoplayer1.FeatureMediaGeneralVideoPlayer1PlayerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.media.general.videoplayer2.FeatureMediaGeneralVideoPlayer2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.menu.general.FeatureMenuGeneralMenu1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.menu.general.FeatureMenuGeneralMenu2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.menu.general.FeatureMenuGeneralMenu3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.menu.general.FeatureMenuGeneralMenu4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.menu.general.FeatureMenuGeneralMenu5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.menu.general.FeatureMenuGeneralMenu6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.menu.general.FeatureMenuGeneralMenu7Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.timeline.ecommerce.FeatureTimelineECommerceTimeline1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.timeline.general.FeatureTimelineGeneralTimeline1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.timeline.social.FeatureTimelineSocialTimeline1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.login.FeatureLoginGeneralLogin1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.login.FeatureLoginGeneralLogin2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.login.FeatureLoginGeneralLogin3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.login.FeatureLoginGeneralLogin4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".activity.feature.signup.general.FeatureSignUpGeneralSignUp1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.signup.general.FeatureSignUpGeneralSignUp2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.signup.general.FeatureSignUpGeneralSignUp3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.signup.general.FeatureSignUpGeneralSignUp4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.forgotpassword.general.FeatureForgotPasswordGeneralForgotPassword1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.forgotpassword.general.FeatureForgotPasswordGeneralForgotPassword2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.forgotpassword.general.FeatureForgotPasswordGeneralForgotPassword3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.forgotpassword.general.FeatureForgotPasswordGeneralForgotPassword4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.dialog.general.FeatureDialogGeneralSuccessDialog1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.dialog.general.FeatureDialogGeneralErrorDialog1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.dialog.general.FeatureDialogGeneralWarningDialog1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.dialog.general.FeatureDialogGeneralConfirmDialog1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.dialog.general.FeatureDialogGeneralFeedbackDialog1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.rating.general.entry.FeatureRatingGeneralEntry1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.rating.general.list.FeatureRatingGeneralList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.rating.general.list.FeatureRatingGeneralList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.stepper.general.FeatureStepperGeneralStepper1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.stepper.ecommerce.FeatureStepperECommerceStepper1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.stepper.quiz.FeatureStepperQuizStepper1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.stepper.quiz.FeatureStepperQuizStepper2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.loadmore.general.FeatureLoadMoreGeneralOnScroll"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.loadmore.general.FeatureLoadMoreGeneralPullRefresh"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.gdpr.general.FeatureGdprGeneralGdpr1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.gdpr.general.FeatureGdprGeneralGdpr2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.notfound.general.FeatureNotFoundGeneralNoInternet1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.notfound.general.FeatureNotFoundGeneralNoData1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.notfound.general.FeatureNotFoundGeneralNoResult1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.notfound.general.FeatureNotFoundGeneralNoMessage1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.comment.general.entry.FeatureCommentGeneralEntry1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.comment.general.entry.FeatureCommentGeneralEntry2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.comment.general.list.FeatureCommentGeneralList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.walkthrough.general.FeatureWalkthroughGeneralWalkthrough1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.splash.general.splash1.FeatureSplashGeneralSplashScreen1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.splash.general.splash2.FeatureSplashGeneralSplashScreen2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.splash.general.splash1.FeatureSplashGeneralSplashScreen1LayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.coverflow.general.FeatureCoverflowGeneralCoverflow1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.coverflow.general.FeatureCoverflowGeneralCoverflow2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.article.news.FeatureArticleNewsArticle1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.article.news.FeatureArticleNewsArticle2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.verification.general.FeatureVerificationGeneralVerification1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.verification.general.FeatureVerificationGeneralVerification2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.verification.general.FeatureVerificationGeneralVerification3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.expandable.ecommerce.FeatureExpandableECommerceExpandable1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.expandable.ecommerce.FeatureExpandableECommerceExpandable2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.feature.setting.general.FeatureSettingGeneralSetting3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.setting.general.FeatureSettingGeneralSetting1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.feature.setting.general.FeatureSettingGeneralSetting2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.application.news.home.AppNewsHome1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.application.news.home.AppNewsHome2Activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".activity.application.news.category.AppNewsCategoryGrid1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.application.news.category.AppNewsCategoryGrid2Activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".activity.application.news.timeline.AppNewsTimeline1Activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".activity.application.news.aboutus.AppNewsAboutUs1Activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".activity.application.news.gallery.AppNewsGallery1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.application.news.gallery.AppNewsGallery2Activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".activity.application.news.detail.AppNewsDetail1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.application.news.detail.AppNewsDetail2Activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".activity.application.news.list.AppNewsList1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.application.news.list.AppNewsList2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.application.news.list.AppNewsList3Activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".activity.application.news.grid.AppNewsGrid1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.application.news.grid.AppNewsGrid2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.application.news.grid.AppNewsGrid3Activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".activity.feature.dashboard.news.FeatureDashboardNewsDashboard1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.feature.dashboard.news.FeatureDashboardNewsDashboard2Activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".activity.feature.list.news.FeatureListNewsList1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.feature.list.news.FeatureListNewsList2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.feature.list.news.FeatureListNewsList3Activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".activity.feature.grid.news.FeatureGridNewsGrid1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.feature.grid.news.FeatureGridNewsGrid2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.feature.grid.news.FeatureGridNewsGrid3Activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".activity.feature.timeline.news.FeatureTimelineNewsTimeline1Activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".activity.feature.gallery.news.FeatureGalleryNewsGallery1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.feature.gallery.news.FeatureGalleryNewsGallery2Activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".activity.feature.grid.news.FeatureGridNewsCategoryGrid1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.feature.grid.news.FeatureGridNewsCategoryGrid2Activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".activity.feature.aboutus.news.FeatureAboutusNewsAboutus1Activity"
+            android:theme="@style/AppTheme" />
+
+        -->
+
+    </application>
+
+</manifest>

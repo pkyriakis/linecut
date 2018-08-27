@@ -1,0 +1,20 @@
+[
+  {
+    "title":"Sweet Child O'Mine",
+    "image":"media_img_1",
+    "singer":"Guns N'Roses",
+    "song":"bensound_happyrock"
+  },
+  {
+    "title":"Back in Black",
+    "image":"media_img_2",
+    "singer":"AC/DC",
+    "song":"bensound_highoctane"
+  },
+  {
+    "title":"November Rain",
+    "image":"media_img_3",
+    "singer":"Guns N'Roses",
+    "song":"bensound_rumble"
+  }
+]

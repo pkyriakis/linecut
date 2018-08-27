@@ -1,0 +1,38 @@
+[
+  {
+    "place_name":"Rider Cafe",
+    "place_image" : "cafe1",
+    "comment":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "region":"West University Cafe",
+    "added":"Jan 1 2018",
+    "ago" : "2 months ago",
+    "action" : "Liked"
+  },
+  {
+    "place_name":"Golden Duck",
+    "place_image" : "cafe2",
+    "comment":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+    "region":"North Land Cafe",
+    "added":"Feb 23 2018",
+    "ago" : "1 month ago",
+    "action" : "Commented"
+  },
+  {
+    "place_name":"Bager Queen",
+    "place_image" : "cafe3",
+    "comment":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+    "region":"East Junction",
+    "added":"Mar 23 2018",
+    "ago" : "1 month ago",
+    "action" : "Liked"
+  },
+  {
+    "place_name":"Chicken Rice",
+    "place_image" : "cafe4",
+    "comment":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+    "region":"East Junction",
+    "added":"May 23 2018",
+    "ago" : "4 minutes ago",
+    "action" : "Liked"
+  }
+]

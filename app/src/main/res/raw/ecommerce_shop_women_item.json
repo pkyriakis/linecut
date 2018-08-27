@@ -1,0 +1,210 @@
+
+[
+  {
+    "id":"Women",
+    "name":"Comfort color tee",
+    "image":"women_cloth_1",
+    "currency":"$",
+    "price":"200",
+    "original_price":"250",
+    "category_name":"Clothing",
+    "rating_count":"45",
+    "total_rating":"4.5",
+    "discount":"0",
+    "is_liked":"true",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tellus orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tellus orci.",
+    "image_list":[
+      {
+        "image_name":"women_cloth_1"
+      },
+      {
+        "image_name":"women_cloth_2"
+      },
+      {
+        "image_name":"women_cloth_3"
+      },
+      {
+        "image_name":"women_cloth_4"
+      },
+      {
+        "image_name":"women_cloth_5"
+      },
+      {
+        "image_name":"women_cloth_6"
+      }
+    ],
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    },
+    "view_count":"3000"
+  },
+  {
+    "id":"Women",
+    "name":"Elephant Tee",
+    "image":"women_cloth_2",
+    "currency":"$",
+    "price":"200",
+    "original_price":"240",
+    "category_name":"Clothing",
+    "rating_count":"34",
+    "total_rating":"5",
+    "discount":"20",
+    "is_liked":"false",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tellus orci.",
+    "image_list":[
+      {
+        "image_name":"women_cloth_1"
+      },
+      {
+        "image_name":"women_cloth_2"
+      },
+      {
+        "image_name":"women_cloth_3"
+      }
+    ],
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    },
+    "view_count":"2500"
+  },
+  {
+    "id":"Women",
+    "name":"Unwind long sleeve tee",
+    "image":"women_cloth_3",
+    "currency":"$",
+    "price":"200",
+    "original_price":"240",
+    "category_name":"Clothing",
+    "rating_count":"500",
+    "total_rating":"4.5",
+    "discount":"20",
+    "is_liked":"false",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tellus orci.",
+    "image_list":[
+      {
+        "image_name":"women_cloth_1"
+      },
+      {
+        "image_name":"women_cloth_2"
+      },
+      {
+        "image_name":"women_cloth_3"
+      }
+    ],
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    },
+    "view_count":"3330"
+  },
+  {
+    "id":"Women",
+    "name":"Tipped 1/4 Zip Pullover brown",
+    "image":"women_cloth_4",
+    "currency":"$",
+    "price":"200",
+    "original_price":"240",
+    "category_name":"Clothing",
+    "total_rating":"5",
+    "rating_count":"55",
+    "discount":"20",
+    "is_liked":"true",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tellus orci.",
+    "image_list":[
+      {
+        "image_name":"women_cloth_1"
+      },
+      {
+        "image_name":"women_cloth_2"
+      },
+      {
+        "image_name":"women_cloth_3"
+      }
+    ],
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    },
+    "view_count":"1002"
+  },
+  {
+    "id":"Women",
+    "name":"Tyler's hoodie",
+    "image":"women_cloth_5",
+    "currency":"$",
+    "price":"200",
+    "original_price":"240",
+    "category_name":"Clothing",
+    "total_rating":"4.5",
+    "rating_count":"50",
+    "discount":"20",
+    "is_liked":"false",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tellus orci.",
+    "image_list":[
+      {
+        "image_name":"women_cloth_1"
+      },
+      {
+        "image_name":"women_cloth_2"
+      },
+      {
+        "image_name":"women_cloth_3"
+      }
+    ],
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    },
+    "view_count":"2500"
+  },
+  {
+    "id":"Women",
+    "name":"The tide roll away tee",
+    "image":"women_cloth_6",
+    "currency":"$",
+    "price":"200",
+    "original_price":"240",
+    "category_name":"Clothing",
+    "total_rating":"3",
+    "rating_count":"33",
+    "discount":"20",
+    "is_liked":"false",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tellus orci.",
+    "image_list":[
+      {
+        "image_name":"women_cloth_1"
+      },
+      {
+        "image_name":"women_cloth_2"
+      },
+      {
+        "image_name":"women_cloth_3"
+      }
+    ],
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    },
+    "view_count":"500"
+  }
+]

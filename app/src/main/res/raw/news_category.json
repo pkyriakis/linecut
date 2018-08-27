@@ -1,0 +1,42 @@
+[
+  {
+    "category":"Sports",
+    "category_image":"news_category_1",
+    "is_check":"true"
+  },
+  {
+    "category":"Travel",
+    "category_image":"news_category_2",
+    "is_check":"true"
+  },
+  {
+    "category":"Style",
+    "category_image":"news_category_3",
+    "is_check":"false"
+  },
+  {
+    "category":"TV & Movies",
+    "category_image":"news_category_4",
+    "is_check":"true"
+  },
+  {
+    "category":"Politics",
+    "category_image":"news_category_5",
+    "is_check":"false"
+  },
+  {
+    "category":"Music",
+    "category_image":"news_category_6",
+    "is_check":"false"
+  },
+  {
+    "category":"Health & Fitness",
+    "category_image":"news_category_7",
+    "is_check":"false"
+  },
+  {
+    "category":"Food",
+    "category_image":"dir_cat_4",
+    "is_check":"true"
+  }
+]

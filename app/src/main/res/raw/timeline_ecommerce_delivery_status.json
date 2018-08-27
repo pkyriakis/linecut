@@ -1,0 +1,37 @@
+[
+  {
+    "date":"Aug14",
+    "time":"09:00",
+    "icon":"timeline_green_circle",
+    "location":"Pathein",
+    "remark":"Delivery Package On Courier"
+  },
+  {
+    "date":"Aug14",
+    "time":"01:40",
+    "icon":"timeline_blue_circle",
+    "location":"Pathein",
+    "remark":"On Process"
+  },
+  {
+    "date":"Aug13",
+    "time":"19:05",
+    "icon":"timeline_yellow_circle",
+    "location":"Pathein",
+    "remark":"Received On Destination"
+  },
+  {
+    "date":"Aug13",
+    "time":"22:00",
+    "icon":"timeline_yellow_circle",
+    "location":"Yangon",
+    "remark":"On Transit"
+  },
+  {
+    "date":"Aug12",
+    "time":"03:05",
+    "icon":"timeline_yellow_circle",
+    "location":"Mandalay",
+    "remark":"Manifested"
+  }
+]

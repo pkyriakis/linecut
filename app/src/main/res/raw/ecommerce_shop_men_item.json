@@ -1,0 +1,200 @@
+[
+  {
+    "id":"Men",
+    "name":"All too easy tee",
+    "image":"men_cloth_1",
+    "currency":"$",
+    "price":"200",
+    "original_price":"240",
+    "category_name":"Clothing",
+    "rating_count":"45",
+    "total_rating":"4.5",
+    "discount":"20",
+    "is_liked":"false",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tellus orci.",
+    "image_list":[
+      {
+        "image_name":"men_cloth_1"
+      },
+      {
+        "image_name":"men_cloth_2"
+      },
+      {
+        "image_name":"men_cloth_3"
+      }
+    ],
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    },
+    "view_count":"3500"
+  },
+  {
+    "id":"Men",
+    "name":"America loves texas tee",
+    "image":"men_cloth_2",
+    "currency":"$",
+    "price":"200",
+    "original_price":"240",
+    "category_name":"Clothing",
+    "rating_count":"50",
+    "total_rating":"5",
+    "discount":"20",
+    "is_liked":"false",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tellus orci.",
+    "image_list":[
+      {
+        "image_name":"men_cloth_1"
+      },
+      {
+        "image_name":"men_cloth_2"
+      },
+      {
+        "image_name":"men_cloth_3"
+      }
+    ],
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    },
+    "view_count":"2500"
+  },
+  {
+    "id":"Men",
+    "name":"Angler fleece pullover",
+    "image":"men_cloth_3",
+    "currency":"$",
+    "price":"200",
+    "original_price":"240",
+    "category_name":"Clothing",
+    "rating_count":"450",
+    "total_rating":"4.5",
+    "discount":"20",
+    "is_liked":"false",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tellus orci.",
+    "image_list":[
+      {
+        "image_name":"men_cloth_1"
+      },
+      {
+        "image_name":"men_cloth_2"
+      },
+      {
+        "image_name":"men_cloth_3"
+      }
+    ],
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    },
+    "view_count":"1500"
+  },
+  {
+    "id":"Men",
+    "name":"Austin city limits track tee",
+    "image":"men_cloth_4",
+    "currency":"$",
+    "price":"200",
+    "original_price":"240",
+    "category_name":"Clothing",
+    "rating_count":"50",
+    "total_rating":"5",
+    "discount":"20",
+    "is_liked":"false",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tellus orci.",
+    "image_list":[
+      {
+        "image_name":"men_cloth_1"
+      },
+      {
+        "image_name":"men_cloth_2"
+      },
+      {
+        "image_name":"men_cloth_3"
+      }
+    ],
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    },
+    "view_count":"2300"
+  },
+  {
+    "id":"Men",
+    "name":"Backpack bear long tee",
+    "image":"men_cloth_5",
+    "currency":"$",
+    "price":"200",
+    "original_price":"240",
+    "category_name":"Clothing",
+    "rating_count":"33",
+    "total_rating":"4.5",
+    "discount":"20",
+    "is_liked":"false",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tellus orci.",
+    "image_list":[
+      {
+        "image_name":"men_cloth_1"
+      },
+      {
+        "image_name":"men_cloth_2"
+      },
+      {
+        "image_name":"men_cloth_3"
+      }
+    ],
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    },
+    "view_count":"2500"
+  },
+  {
+    "id":"Men",
+    "name":"Bermuda Polo",
+    "image":"men_cloth_6",
+    "currency":"$",
+    "price":"200",
+    "original_price":"240",
+    "category_name":"Clothing",
+    "rating_count":"25",
+    "total_rating":"4.5",
+    "discount":"20",
+    "is_liked":"false",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tellus orci.",
+    "image_list":[
+      {
+        "image_name":"men_cloth_1"
+      },
+      {
+        "image_name":"men_cloth_2"
+      },
+      {
+        "image_name":"men_cloth_3"
+      }
+    ],
+    "shop" : {
+      "shop_name":"Nike",
+      "shop_email":"teamps.is.cool@gmail.com",
+      "shop_phone":"+957777777",
+      "shop_website":"www.panacea-soft.com",
+      "shop_address":"Alkida'a Street , Ghamdhan balding, First floor"
+    },
+    "view_count":"4500"
+  }
+]

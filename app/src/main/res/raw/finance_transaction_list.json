@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Lunch with friend",
+    "amount": "$50.00",
+    "date": "30-Jun-2020",
+    "type": "Cash",
+    "icon": "finance_img_1"
+  },
+  {
+    "title": "Shopping",
+    "amount": "$600.00",
+    "date": "30-Jun-2020",
+    "type": "Payment",
+    "icon": "finance_img_2"
+  },
+  {
+    "title": "Dinner",
+    "amount": "$100.00",
+    "date": "28-Jun-2020",
+    "type": "Payment",
+    "icon": "finance_img_3"
+  },
+  {
+    "title": "Taxi Bill",
+    "amount": "$2000.00",
+    "date": "01-Jun-2020",
+    "type": "Debit",
+    "icon": "finance_img_4"
+  },
+  {
+    "title": "Train Ticket",
+    "amount": "$20.00",
+    "date": "30-May-2020",
+    "type": "Cash",
+    "icon": "finance_img_5"
+  },
+  {
+    "title": "Gym",
+    "amount": "$300",
+    "date": "30-May-2020",
+    "type": "Payment",
+    "icon": "finance_img_6"
+  }
+]

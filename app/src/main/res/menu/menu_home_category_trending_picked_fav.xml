@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeMenu"
+        android:icon="@drawable/baseline_home_line_24"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/categoryMenu"
+        android:icon="@drawable/baseline_shop_cat_24"
+        android:title="Category"
+        />
+    <item
+        android:id="@+id/saveMenu"
+        android:icon="@drawable/baseline_trending_black_24"
+        android:title="Trending"
+        />
+
+    <item
+        android:id="@+id/mailMenu"
+        android:icon="@drawable/baseline_announce_white_24"
+        android:title="Editor Picked"
+        />
+
+    <item
+        android:id="@+id/profileMenu"
+        android:icon="@drawable/baseline_favourite_flag_black_24"
+        android:title="Favourite"
+        />
+</menu>

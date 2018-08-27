@@ -1,0 +1,39 @@
+[
+  {
+    "date":"21:14",
+    "name":"Adam Applessed",
+    "user_image":"profile2",
+    "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+    "icon":"baseline_mail_24",
+    "image":"",
+    "type":"post"
+  },
+  {
+    "date":"20:20",
+    "name":"Adam Applessed",
+    "user_image":"profile2",
+    "detail":"Coffee Time",
+    "icon":"baseline_insert_photo_black_24",
+    "image":"cafe1",
+    "type":"image"
+  },
+  {
+    "date":"20:10",
+    "name":"Marcus",
+    "user_image":"profile1",
+    "detail":"just liked your picture",
+    "icon":"baseline_heart_white",
+    "image":"",
+    "type":"like_status"
+  },
+  {
+    "date":"19:10",
+    "name":"Adam Applessed",
+    "user_image":"profile2",
+    "detail":"Lorem",
+    "icon":"baseline_insert_photo_black_24",
+    "image":"city_japan",
+    "type":"image"
+  }
+
+]
