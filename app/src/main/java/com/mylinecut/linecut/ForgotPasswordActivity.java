@@ -7,8 +7,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.mylinecut.linecut.R;
-
 public class ForgotPasswordActivity extends AppCompatActivity {
 
     Button resetButton;
@@ -18,7 +16,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout._linecut_forgot_password_activity);
+        setContentView(R.layout.forgot_password_activity);
 
         initUI();
 

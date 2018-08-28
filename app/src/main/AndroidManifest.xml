@@ -56,8 +56,15 @@
             android:name="com.mylinecut.linecut.SignupActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.mylinecut.linecut.ForgotPasswordActivity"
+            android:name="com.mylinecut.linecut.PhoneVerificationStep1Activity"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.mylinecut.linecut.PhoneVerificationStep2Activity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.mylinecut.linecut.AppDirectoryHome2Activity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
 
 
 
@@ -1373,10 +1380,10 @@
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activity.feature.verification.general.FeatureVerificationGeneralVerification1Activity"
+            android:name=".activity.feature.verification.general.PhoneVerificationStep1Activity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.feature.verification.general.FeatureVerificationGeneralVerification2Activity"
+            android:name=".activity.feature.verification.general.PhoneVerificationStep2Activity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.feature.verification.general.FeatureVerificationGeneralVerification3Activity"

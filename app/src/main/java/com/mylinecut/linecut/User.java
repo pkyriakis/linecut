@@ -1,11 +1,14 @@
 package com.mylinecut.linecut;
 
 public class User {
-    public String uid;
-    public String firstname;
-    public String lastname;
-    public String email;
-    public String birthDay;
+    private String uid;
+    private String firstname;
+    private String lastname;
+    private String email;
+    private String birthDay;
+    private String phone;
+    private Integer phoneVerCode;
+    private String type;
 
     public User(){
 
@@ -49,5 +52,29 @@ public class User {
 
     public void setBirthDay(String birthDay) {
         this.birthDay = birthDay;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public Integer getPhoneVerCode() {
+        return phoneVerCode;
+    }
+
+    public void setPhoneVerCode(Integer phoneVerCode) {
+        this.phoneVerCode = phoneVerCode;
     }
 }

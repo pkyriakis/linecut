@@ -19,12 +19,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-import android.view.View;
-import android.view.View.OnClickListener;
-
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.mylinecut.linecut.R;
 import com.mylinecut.linecut.utils.Validator;
+import com.mylinecut.linecut.utils.CommonUI;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -33,6 +30,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.FirebaseAuthException;
 import com.google.firebase.firestore.*;
+
+import com.google.gson.*;
 
 public class SignupActivity extends AppCompatActivity {
 
@@ -67,7 +66,7 @@ public class SignupActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout._linecut_signup_activity);
+        setContentView(R.layout.signup_activity);
 
         initUI();
 
@@ -129,6 +128,7 @@ public class SignupActivity extends AppCompatActivity {
     private boolean validateInput(){
         boolean isValid = true;
         user = new User();
+        user.setType("client");
         Validator validator = new Validator();
 
         firstname = firstnameEditText.getText().toString().trim();
@@ -142,66 +142,46 @@ public class SignupActivity extends AppCompatActivity {
             user.setFirstname(firstname);
         }else{
             firstnameEditText.setError("Please enter your first name.");
-            removeErrorsOnTextChange(firstnameEditText);
+            (new CommonUI()).removeErrorsOnTextChange(firstnameEditText);
             isValid = false;
         }
         if(!lastname.isEmpty()){
             user.setLastname(lastname);
         }else{
             lastnameEditText.setError("Please enter your last name.");
-            removeErrorsOnTextChange(lastnameEditText);
+            (new CommonUI()).removeErrorsOnTextChange(lastnameEditText);
             isValid = false;
         }
         if(validator.isThisDateValid(birthday,DATE_FORMAT)){
             user.setBirthDay(birthday);
         }else{
             birthdayEditText.setError("Please enter a valid date.");
-            removeErrorsOnTextChange(birthdayEditText);
+            (new CommonUI()).removeErrorsOnTextChange(birthdayEditText);
             isValid = false;
         }
         if(validator.isValidEmail(email)){
             user.setEmail(email);
         }else{
             emailEditText.setError("Please enter a valid email address.");
-            removeErrorsOnTextChange(emailEditText);
+            (new CommonUI()).removeErrorsOnTextChange(emailEditText);
             isValid = false;
         }
         if(!pass.equals(reppass)){
             passEditText.setError("Passwords do not match.");
             reppassEditText.setError("Passwords do not match.");
-            removeErrorsOnTextChange(passEditText);
-            removeErrorsOnTextChange(reppassEditText);
+            (new CommonUI()).removeErrorsOnTextChange(passEditText);
+            (new CommonUI()).removeErrorsOnTextChange(reppassEditText);
             isValid = false;
         }
         if(pass.length()<6){
             passEditText.setError("Must be at least 6 characters.");
-            removeErrorsOnTextChange(passEditText);
+            (new CommonUI()).removeErrorsOnTextChange(passEditText);
             isValid = false;
         }
 
         return isValid;
     }
 
-    // Removes the error when the text in the given edittext is changed
-    private void removeErrorsOnTextChange(final EditText itemText)
-    {
-
-        itemText.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                itemText.setError(null);
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-
-            }
-        });
-    }
 
     // to be written; register user
     private void register(){
@@ -209,103 +189,100 @@ public class SignupActivity extends AppCompatActivity {
         mDatabase = FirebaseFirestore.getInstance();
 
         mAuth.createUserWithEmailAndPassword(email, pass)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
-                            FirebaseUser mUser = mAuth.getCurrentUser();
-                            if (mUser != null) {
-                                String uid = mUser.getUid();
-                                user.setUid(uid);
+                .addOnCompleteListener(this, task -> {
+                    if (task.isSuccessful()) {
+                        // Sign in success, update UI with the signed-in user's information
+                        FirebaseUser mUser = mAuth.getCurrentUser();
+                        if (mUser != null) {
+                            String uid = mUser.getUid();
+                            user.setUid(uid);
 
-                                Log.d("uid", user.getUid());
-                                mDatabase.collection("users").document(user.getUid()).set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                    @Override
-                                    public void onSuccess(Void aVoid) {
-                                        //Intent intent = new Intent(SignupActivity.this,UserDashboard.class);
-                                        //startActivity(intent);
-                                        finish();
-                                    }
-                                });
-                            }
-                        } else {
+                            Log.d("uid", user.getUid());
+                            mDatabase.collection("users").document(user.getUid()).set(user).addOnSuccessListener(aVoid -> {
+                                Gson gson = new Gson();
+                                String userJson = gson.toJson(user);
+                                Intent intent = new Intent(SignupActivity.this,PhoneVerificationStep1Activity.class);
+                                intent.putExtra("userJson",userJson);
+                                startActivity(intent);
+                                finish();
+                            });
+                        }
+                    } else {
 
-                            String errorCode = ((FirebaseAuthException) task.getException()).getErrorCode();
+                        String errorCode = ((FirebaseAuthException) task.getException()).getErrorCode();
 
-                            switch (errorCode) {
+                        switch (errorCode) {
 
-                                case "ERROR_INVALID_CUSTOM_TOKEN":
-                                    Toast.makeText(SignupActivity.this, "The custom token format is incorrect. Please check the documentation.", Toast.LENGTH_LONG).show();
-                                    break;
+                            case "ERROR_INVALID_CUSTOM_TOKEN":
+                                Toast.makeText(SignupActivity.this, "The custom token format is incorrect. Please check the documentation.", Toast.LENGTH_LONG).show();
+                                break;
 
-                                case "ERROR_CUSTOM_TOKEN_MISMATCH":
-                                    Toast.makeText(SignupActivity.this, "The custom token corresponds to a different audience.", Toast.LENGTH_LONG).show();
-                                    break;
+                            case "ERROR_CUSTOM_TOKEN_MISMATCH":
+                                Toast.makeText(SignupActivity.this, "The custom token corresponds to a different audience.", Toast.LENGTH_LONG).show();
+                                break;
 
-                                case "ERROR_INVALID_CREDENTIAL":
-                                    Toast.makeText(SignupActivity.this, "The supplied auth credential is malformed or has expired.", Toast.LENGTH_LONG).show();
-                                    break;
+                            case "ERROR_INVALID_CREDENTIAL":
+                                Toast.makeText(SignupActivity.this, "The supplied auth credential is malformed or has expired.", Toast.LENGTH_LONG).show();
+                                break;
 
-                                case "ERROR_INVALID_EMAIL":
-                                    emailEditText.setError("The email address is badly formatted.");
-                                    emailEditText.requestFocus();
-                                    break;
+                            case "ERROR_INVALID_EMAIL":
+                                emailEditText.setError("The email address is badly formatted.");
+                                emailEditText.requestFocus();
+                                break;
 
-                                case "ERROR_WRONG_PASSWORD":
-                                    Toast.makeText(SignupActivity.this, "The password is invalid.", Toast.LENGTH_LONG).show();
-                                    passEditText.setError("Password is incorrect ");
-                                    passEditText.requestFocus();
-                                    passEditText.setText("");
-                                    break;
+                            case "ERROR_WRONG_PASSWORD":
+                                Toast.makeText(SignupActivity.this, "The password is invalid.", Toast.LENGTH_LONG).show();
+                                passEditText.setError("Password is incorrect ");
+                                passEditText.requestFocus();
+                                passEditText.setText("");
+                                break;
 
-                                case "ERROR_USER_MISMATCH":
-                                    Toast.makeText(SignupActivity.this, "The supplied credentials do not correspond to the previously signed in user.", Toast.LENGTH_LONG).show();
-                                    break;
+                            case "ERROR_USER_MISMATCH":
+                                Toast.makeText(SignupActivity.this, "The supplied credentials do not correspond to the previously signed in user.", Toast.LENGTH_LONG).show();
+                                break;
 
-                                case "ERROR_REQUIRES_RECENT_LOGIN":
-                                    Toast.makeText(SignupActivity.this, "This operation is sensitive and requires recent authentication. Log in again before retrying this request.", Toast.LENGTH_LONG).show();
-                                    break;
+                            case "ERROR_REQUIRES_RECENT_LOGIN":
+                                Toast.makeText(SignupActivity.this, "This operation is sensitive and requires recent authentication. Log in again before retrying this request.", Toast.LENGTH_LONG).show();
+                                break;
 
-                                case "ERROR_ACCOUNT_EXISTS_WITH_DIFFERENT_CREDENTIAL":
-                                    Toast.makeText(SignupActivity.this, "An account already exists with the same email address but different sign-in credentials. Sign in using a provider associated with this email address.", Toast.LENGTH_LONG).show();
-                                    break;
+                            case "ERROR_ACCOUNT_EXISTS_WITH_DIFFERENT_CREDENTIAL":
+                                Toast.makeText(SignupActivity.this, "An account already exists with the same email address but different sign-in credentials. Sign in using a provider associated with this email address.", Toast.LENGTH_LONG).show();
+                                break;
 
-                                case "ERROR_EMAIL_ALREADY_IN_USE":
-                                    emailEditText.setError("The email address is already in use by another account.");
-                                    emailEditText.requestFocus();
-                                    break;
+                            case "ERROR_EMAIL_ALREADY_IN_USE":
+                                emailEditText.setError("The email address is already in use by another account.");
+                                emailEditText.requestFocus();
+                                break;
 
-                                case "ERROR_CREDENTIAL_ALREADY_IN_USE":
-                                    Toast.makeText(SignupActivity.this, "This credential is already associated with a different user account.", Toast.LENGTH_LONG).show();
-                                    break;
+                            case "ERROR_CREDENTIAL_ALREADY_IN_USE":
+                                Toast.makeText(SignupActivity.this, "This credential is already associated with a different user account.", Toast.LENGTH_LONG).show();
+                                break;
 
-                                case "ERROR_USER_DISABLED":
-                                    Toast.makeText(SignupActivity.this, "The user account has been disabled by an administrator.", Toast.LENGTH_LONG).show();
-                                    break;
+                            case "ERROR_USER_DISABLED":
+                                Toast.makeText(SignupActivity.this, "The user account has been disabled by an administrator.", Toast.LENGTH_LONG).show();
+                                break;
 
-                                case "ERROR_USER_TOKEN_EXPIRED":
-                                    Toast.makeText(SignupActivity.this, "The user\\'s credential is no longer valid. The user must sign in again.", Toast.LENGTH_LONG).show();
-                                    break;
+                            case "ERROR_USER_TOKEN_EXPIRED":
+                                Toast.makeText(SignupActivity.this, "The user\\'s credential is no longer valid. The user must sign in again.", Toast.LENGTH_LONG).show();
+                                break;
 
-                                case "ERROR_USER_NOT_FOUND":
-                                    Toast.makeText(SignupActivity.this, "There is no user record corresponding to this identifier. The user may have been deleted.", Toast.LENGTH_LONG).show();
-                                    break;
+                            case "ERROR_USER_NOT_FOUND":
+                                Toast.makeText(SignupActivity.this, "There is no user record corresponding to this identifier. The user may have been deleted.", Toast.LENGTH_LONG).show();
+                                break;
 
-                                case "ERROR_INVALID_USER_TOKEN":
-                                    Toast.makeText(SignupActivity.this, "The user\\'s credential is no longer valid. The user must sign in again.", Toast.LENGTH_LONG).show();
-                                    break;
+                            case "ERROR_INVALID_USER_TOKEN":
+                                Toast.makeText(SignupActivity.this, "The user\\'s credential is no longer valid. The user must sign in again.", Toast.LENGTH_LONG).show();
+                                break;
 
-                                case "ERROR_OPERATION_NOT_ALLOWED":
-                                    Toast.makeText(SignupActivity.this, "This operation is not allowed. You must enable this service in the console.", Toast.LENGTH_LONG).show();
-                                    break;
+                            case "ERROR_OPERATION_NOT_ALLOWED":
+                                Toast.makeText(SignupActivity.this, "This operation is not allowed. You must enable this service in the console.", Toast.LENGTH_LONG).show();
+                                break;
 
-                                case "ERROR_WEAK_PASSWORD":
-                                    passEditText.setError("Password must be at least 6 characters.");
-                                    passEditText.requestFocus();
-                                    break;
+                            case "ERROR_WEAK_PASSWORD":
+                                passEditText.setError("Password must be at least 6 characters.");
+                                passEditText.requestFocus();
+                                break;
 
-                            }
                         }
                     }
                 });
