@@ -12,7 +12,7 @@ import android.util.Log;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 import com.mylinecut.linecut.R;
-import com.mylinecut.linecut.MainActivity;
+import com.mylinecut.linecut.activity.MainActivity;
 
 /**
  * Created by Panacea-Soft on 1/8/18.

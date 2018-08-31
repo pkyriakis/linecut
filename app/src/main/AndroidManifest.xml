@@ -33,7 +33,7 @@
             android:value="AIzaSyDNVK1Q4rVL8Za6wc6pqB_eKNIJqrzuv94" />
 
         <activity
-            android:name="com.mylinecut.linecut.MainActivity"
+            android:name="com.mylinecut.linecut.activity.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -45,24 +45,27 @@
 
 
         <activity
-            android:name="com.mylinecut.linecut.SplashScreen"
+            android:name="com.mylinecut.linecut.activity.prelims.SplashScreenActivity"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="com.mylinecut.linecut.LoginActivity"
+            android:name="com.mylinecut.linecut.activity.prelims.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="com.mylinecut.linecut.SignupActivity"
+            android:name="com.mylinecut.linecut.activity.prelims.SignupActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.mylinecut.linecut.PhoneVerificationStep1Activity"
+            android:name="com.mylinecut.linecut.activity.prelims.PhoneVerificationStep1Activity"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-            android:name="com.mylinecut.linecut.PhoneVerificationStep2Activity"
+            android:name="com.mylinecut.linecut.activity.prelims.PhoneVerificationStep2Activity"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-            android:name="com.mylinecut.linecut.AppDirectoryHome2Activity"
+            android:name="com.mylinecut.linecut.activity.client.AppDirectoryHome1Activity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.mylinecut.linecut.activity.client.AppDirectoryHome2Activity"
             android:theme="@style/AppTheme.NoActionBar"/>
 
 

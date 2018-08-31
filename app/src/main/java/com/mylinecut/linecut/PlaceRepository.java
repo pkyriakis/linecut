@@ -2,7 +2,7 @@ package com.mylinecut.linecut;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.mylinecut.linecut.Place;
+import com.mylinecut.linecut.object.Place;
 
 import java.util.ArrayList;
 
