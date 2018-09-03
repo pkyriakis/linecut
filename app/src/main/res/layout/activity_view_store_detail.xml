@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_grey_100">
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:id="@+id/appbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+        <!--<android.support.design.widget.CollapsingToolbarLayout-->
+            <!--android:id="@+id/collapsingToolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/md_white_1000"-->
+            <!--android:fitsSystemWindows="true"-->
+            <!--app:contentScrim="@color/colorPrimary"-->
+            <!--app:collapsedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"-->
+            <!--app:expandedTitleTextAppearance="@android:color/transparent"-->
+            <!--app:layout_scrollFlags="scroll|exitUntilCollapsed">-->
+
+            <!--&lt;!&ndash;<android.support.v7.widget.Toolbar&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/toolbar"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="?android:attr/actionBarSize"&ndash;&gt;-->
+                <!--&lt;!&ndash;app:layout_collapseMode="pin"/>&ndash;&gt;-->
+
+        <!--</android.support.design.widget.CollapsingToolbarLayout>-->
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/md_grey_100"
+            android:scrollbars="none"
+            android:scrollingCache="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/md_grey_100">
+
+                    <ImageView
+                        android:id="@+id/storeImageView"
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.gms.maps.MapView
+                        android:id="@+id/storeMapView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginStart="24dp"
+                        android:contentDescription="TODO"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/favImageView"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/storeImageView"
+                        app:srcCompat="@drawable/baseline_heart_white" />
+
+                    <ImageView
+                        android:id="@+id/backImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/baseline_arrow_back_black_24" />
+
+                    <ImageView
+                        android:id="@+id/moreImageView"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:tint="@color/md_grey_600"
+                        app:layout_constraintBottom_toBottomOf="@+id/backImageView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/backImageView"
+                        app:srcCompat="@drawable/baseline_option_menu_24" />
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/placeNameTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Gardens By The Bay"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/md_grey_800"
+                        android:textSize="@dimen/font_title_size"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView21"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="16dp"
+                        android:tint="@color/md_grey_600"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/addressTextView"
+                        app:srcCompat="@drawable/baseline_call" />
+
+                    <TextView
+                        android:id="@+id/phoneTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="03212653"
+                        android:textAlignment="viewStart"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/imageView21"
+                        app:layout_constraintTop_toBottomOf="@+id/addressTextView" />
+
+                    <ImageView
+                        android:id="@+id/imageView22"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="16dp"
+                        android:tint="@color/md_grey_600"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/phoneTextView"
+                        app:srcCompat="@drawable/baseline_website" />
+
+                    <TextView
+                        android:id="@+id/websiteTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="www.panacea-soft.com"
+                        android:textAlignment="viewStart"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView22"
+                        app:layout_constraintTop_toBottomOf="@+id/phoneTextView" />
+
+                    <ImageView
+                        android:id="@+id/imageView23"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="16dp"
+                        android:tint="@color/md_grey_600"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/websiteTextView"
+                        app:srcCompat="@drawable/baseline_opening" />
+
+                    <TextView
+                        android:id="@+id/openingTimeTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="09:00 - 21:00, Open Now"
+                        android:textAlignment="viewStart"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView23"
+                        app:layout_constraintTop_toBottomOf="@+id/websiteTextView" />
+
+                    <ImageView
+                        android:id="@+id/imageView24"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="16dp"
+                        android:tint="@color/md_grey_600"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/descriptionTextView"
+                        app:srcCompat="@drawable/baseline_pin_dorp" />
+
+                    <TextView
+                        android:id="@+id/addressTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="26 Kings St N, Toronto, On L2D8P3"
+                        android:textAlignment="viewStart"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView24"
+                        app:layout_constraintTop_toBottomOf="@+id/descriptionTextView" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="TextView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/placeNameTextView" />
+
+                </android.support.constraint.ConstraintLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout26"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/viewMenuButton"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorPrimary"
+                android:drawableEnd="@drawable/baseline_forward_arrow_white_24"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:text="VIEW MENU"
+                android:textColor="@color/md_white_1000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>

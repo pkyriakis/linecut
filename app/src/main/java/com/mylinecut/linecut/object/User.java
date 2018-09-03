@@ -1,5 +1,7 @@
 package com.mylinecut.linecut.object;
 
+import java.util.ArrayList;
+
 public class User {
     private String uid;
     private String firstname;
@@ -9,9 +11,18 @@ public class User {
     private String phone;
     private Integer phoneVerCode;
     private String type;
+    private ArrayList<String> favoriteStoresIDs;
 
     public User(){
 
+    }
+
+    public ArrayList<String> getFavoriteStoresIDs() {
+        return favoriteStoresIDs;
+    }
+
+    public void setFavoriteStoresIDs(ArrayList<String> favoriteStoresIDs) {
+        this.favoriteStoresIDs = favoriteStoresIDs;
     }
 
     public String getUid() {
@@ -77,4 +88,8 @@ public class User {
     public void setPhoneVerCode(Integer phoneVerCode) {
         this.phoneVerCode = phoneVerCode;
     }
+
+    public void removeStoreFromFav(String sid){this.favoriteStoresIDs.remove(sid);}
+
+    public void addStoreToFav(String sid){this.favoriteStoresIDs.add(sid);}
 }

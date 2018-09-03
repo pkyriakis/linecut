@@ -74,7 +74,7 @@ public class AppDirectoryHome2Fragment extends Fragment {
 
     private void initUI(View view) {
 
-        imageViewPager = view.findViewById(R.id.imageViewPager);
+        imageViewPager = view.findViewById(R.id.storeImageView);
 
         pager_indicator = view.findViewById(R.id.viewPagerCountDots);
 

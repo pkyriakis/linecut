@@ -10,6 +10,10 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.*;
 import com.google.gson.Gson;
 import com.mylinecut.linecut.activity.client.AppDirectoryHome1Activity;
+import com.mylinecut.linecut.activity.client.ViewStoreDetailActivity;
+import com.mylinecut.linecut.activity.client.ViewStoreMenuActivity;
+import com.mylinecut.linecut.activity.prelims.PhoneVerificationStep1Activity;
+import com.mylinecut.linecut.activity.prelims.PhoneVerificationStep2Activity;
 import com.mylinecut.linecut.activity.prelims.SplashScreenActivity;
 import com.mylinecut.linecut.object.Product;
 import com.mylinecut.linecut.object.Store;
@@ -35,25 +39,6 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         mDatabase = FirebaseFirestore.getInstance();
 
-        mDatabase.collection("products/MZyV2VuZBXmTanWbr9gY/categorylist/18wXovyJShMEivBlUFWi/productslist").
-                document("7GneJaiDfzJwNSH8obEl").get().addOnCompleteListener(task->{
-           if (task.isSuccessful()){
-               Log.d("store", "DocumentSnapshot data: " + task.getResult().getData());
-               product=task.getResult().toObject(Product.class);
-           }else {
-               Log.d("failed", "get failed with ", task.getException());
-           }
-        });
-        mDatabase.collection("store").
-                document(sid).get().addOnCompleteListener(task->{
-            if (task.isSuccessful()){
-                Log.d("store", "DocumentSnapshot data: " + task.getResult().getData());
-                store=task.getResult().toObject(Store.class);
-            }else {
-                Log.d("failed", "get failed with ", task.getException());
-            }
-        });
-
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
 
@@ -67,7 +52,14 @@ public class MainActivity extends AppCompatActivity {
                 if (task1.isSuccessful()){// profile successfully retrieved
                     DocumentSnapshot userDoc = task1.getResult();
                     user = userDoc.toObject(User.class);
-                    redirect();
+                    Gson gson = new Gson();
+                    String userJson = gson.toJson(user);
+                    Intent intent1 = new Intent(MainActivity.this, ViewStoreDetailActivity.class);
+                    intent1.putExtra("userJson",userJson);
+                    intent1.putExtra("storeid",gson.toJson(sid));
+                    startActivity(intent1);
+                    finish();
+                   // redirect();
                 }
             });
         }

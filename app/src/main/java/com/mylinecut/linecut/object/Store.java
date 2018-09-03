@@ -3,11 +3,66 @@ package com.mylinecut.linecut.object;
 import java.util.ArrayList;
 
 public class Store {
-    String storeid, name, street, city, postcode, mainimage;
+    String storeid;
+    String name;
+    String description;
+    String address;
+    String mainimage;
+    String contactPhone;
+    String website;
     ArrayList<String> openninghours, deliverytype, deliverylocations_counter, deliverylocations_table;
+    Double location_lat, location_long;
 
     public Store(){
 
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getWebsite() {
+        return website;
+    }
+
+    public void setWebsite(String website) {
+        this.website = website;
+    }
+
+    public String getContactPhone() {
+        return contactPhone;
+    }
+
+    public void setContactPhone(String contactPhone) {
+        this.contactPhone = contactPhone;
+    }
+
+    public Double getLocation_lat() {
+        return location_lat;
+    }
+
+    public void setLocation_lat(Double location_lat) {
+        this.location_lat = location_lat;
+    }
+
+    public Double getLocation_long() {
+        return location_long;
+    }
+
+    public void setLocation_long(Double location_long) {
+        this.location_long = location_long;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getStoreid() {
@@ -24,30 +79,6 @@ public class Store {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getStreet() {
-        return street;
-    }
-
-    public void setStreet(String street) {
-        this.street = street;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getPostcode() {
-        return postcode;
-    }
-
-    public void setPostcode(String postcode) {
-        this.postcode = postcode;
     }
 
     public String getMainimage() {
