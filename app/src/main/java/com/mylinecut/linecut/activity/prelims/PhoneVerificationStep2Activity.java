@@ -87,7 +87,7 @@ public class PhoneVerificationStep2Activity extends AppCompatActivity {
             }else{
                 user.setPhoneVerCode(-1);
                 FirebaseFirestore mDatabase = FirebaseFirestore.getInstance();
-                mDatabase.collection("users").document(user.getUid()).update("phoneVerCode",-1)
+                mDatabase.collection("users").document(user.getUserId()).update("phoneVerCode",-1)
                         .addOnSuccessListener(aVoid -> {
                             Gson gson = new Gson();
                             String userJson = gson.toJson(user);

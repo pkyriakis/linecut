@@ -26,7 +26,8 @@ import com.google.gson.*;
 import com.mylinecut.linecut.object.User;
 import com.panaceasoft.awesomematerial.utils.Utils;
 
-import java.util.ArrayList;
+import java.io.File;
+import java.io.FileOutputStream;
 
 public class ViewStoreDetailActivity extends AppCompatActivity implements OnMapReadyCallback {
 
@@ -36,8 +37,12 @@ public class ViewStoreDetailActivity extends AppCompatActivity implements OnMapR
     Store store;
     String storeid;
     User user;
+    Bitmap storeImageBitMap;
+
+    // Firebase
     FirebaseFirestore mDatabase;
     FirebaseStorage mStorage;
+
     // Map
     GoogleMap googleMap;
 
@@ -108,18 +113,27 @@ public class ViewStoreDetailActivity extends AppCompatActivity implements OnMapR
        mDatabase.collection("store").document(storeid).get().addOnCompleteListener(task -> {
            if(task.isSuccessful()){
                store = task.getResult().toObject(Store.class);
+               store.setStoreId(task.getResult().getId());
                initMap();
                initDataBindings();
-               mStorage = FirebaseStorage.getInstance();
-               mStorage.getReference().child("store/" + store.getStoreid() + "/" + store.getMainimage()).getBytes(MAX_SIZE).addOnCompleteListener(task1 -> {
-                   if (task1.isSuccessful()){
-                       byte[] byteArray = task1.getResult();
-                       Bitmap bmp = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
-                       storeImageView.setImageBitmap(bmp);
-                   }else{
-                       Log.e("FAILED_DATA_RETRIEVAL", "initData: " + task1.getException().toString() );
-                   }
-               });
+
+               String imagePath = "store/" + store.getStoreId() + "/" + store.getMainimage();
+               File imageFile = new File(getApplicationContext().getFilesDir(),imagePath);
+               if (imageFile.exists()){
+                   storeImageBitMap = BitmapFactory.decodeFile(imagePath);
+                   storeImageView.setImageBitmap(storeImageBitMap);
+               }else {
+                   mStorage = FirebaseStorage.getInstance();
+                   mStorage.getReference().child(imagePath).getBytes(MAX_SIZE).addOnCompleteListener(task1 -> {
+                       if (task1.isSuccessful()) {
+                           byte[] byteArray = task1.getResult();
+                           storeImageBitMap = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+                           storeImageView.setImageBitmap(storeImageBitMap);
+                       } else {
+                           Log.e("FAILED_DATA_RETRIEVAL", "initData: " + task1.getException().toString());
+                       }
+                   });
+               }
            }else{
                Log.e("FAILED_DATA_RETRIEVAL", "initData: " + task.getException().toString() );
            }
@@ -133,7 +147,7 @@ public class ViewStoreDetailActivity extends AppCompatActivity implements OnMapR
         mapView.onCreate(savedInstanceState);
         mapView.getMapAsync(this);
 
-        placeNameTextView = findViewById(R.id.placeNameTextView);
+        placeNameTextView = findViewById(R.id.productNameTextView);
         phoneTextView = findViewById(R.id.phoneTextView);
         websiteTextView = findViewById(R.id.websiteTextView);
         openingTimeTextView = findViewById(R.id.openingTimeTextView);
@@ -141,7 +155,7 @@ public class ViewStoreDetailActivity extends AppCompatActivity implements OnMapR
         storeImageView = findViewById(R.id.storeImageView);
         backImageView = findViewById(R.id.backImageView);
         moreImageView = findViewById(R.id.moreImageView);
-        descriptionTextView = findViewById(R.id.descriptionTextView);
+        descriptionTextView = findViewById(R.id.productDescriptionTextView);
         favImageView = findViewById(R.id.favImageView);
         viewStoreMenu = findViewById(R.id.viewMenuButton);
 
@@ -183,7 +197,7 @@ public class ViewStoreDetailActivity extends AppCompatActivity implements OnMapR
             //if yes remove it
             user.removeStoreFromFav(storeid);
             // update db
-            mDatabase.collection("users").document(user.getUid()).update("favoriteStoresIDs",user.getFavoriteStoresIDs()).addOnCompleteListener(task -> {
+            mDatabase.collection("users").document(user.getUserId()).update("favoriteStoresIDs",user.getFavoriteStoresIDs()).addOnCompleteListener(task -> {
                 if (task.isSuccessful()){
                     //show toast and change
                     Toast.makeText(ViewStoreDetailActivity.this,"Removed from favorites",Toast.LENGTH_SHORT).show();
@@ -197,7 +211,7 @@ public class ViewStoreDetailActivity extends AppCompatActivity implements OnMapR
             // does not belong; add it
             user.addStoreToFav(storeid);
             // update db
-            mDatabase.collection("users").document(user.getUid()).update("favoriteStoresIDs",user.getFavoriteStoresIDs()).addOnCompleteListener(task -> {
+            mDatabase.collection("users").document(user.getUserId()).update("favoriteStoresIDs",user.getFavoriteStoresIDs()).addOnCompleteListener(task -> {
                 if (task.isSuccessful()){
                     //show toast and change
                     Toast.makeText(ViewStoreDetailActivity.this,"Added to" +
@@ -223,6 +237,7 @@ public class ViewStoreDetailActivity extends AppCompatActivity implements OnMapR
             Intent intent = new Intent(ViewStoreDetailActivity.this, ViewStoreMenuActivity.class);
             intent.putExtra("userJson",userJson);
             intent.putExtra("storeJson",storeJson);
+            //intent.putExtra("storeImageJson",storeImageBitMap);
             startActivity(intent);
         });
 

@@ -3,7 +3,7 @@ package com.mylinecut.linecut.object;
 import java.util.ArrayList;
 
 public class Store {
-    String storeid;
+    String storeId;
     String name;
     String description;
     String address;
@@ -65,12 +65,12 @@ public class Store {
         this.description = description;
     }
 
-    public String getStoreid() {
-        return storeid;
+    public String getStoreId() {
+        return storeId;
     }
 
-    public void setStoreid(String storeid) {
-        this.storeid = storeid;
+    public void setStoreId(String storeId) {
+        this.storeId = storeId;
     }
 
     public String getName() {

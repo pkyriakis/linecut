@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/productHolderCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/price1TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto"
+                android:text="$ 100"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_body_size"
+                app:layout_constraintBottom_toBottomOf="@+id/priceRangeUpDownImageView"
+                app:layout_constraintEnd_toStartOf="@+id/priceRangeUpDownImageView"
+                app:layout_constraintTop_toTopOf="@+id/priceRangeUpDownImageView"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/priceUnit1TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto"
+                android:text="Label1"
+                android:textColor="@color/md_grey_600"
+                android:textSize="@dimen/font_body_size"
+                app:layout_constraintBottom_toBottomOf="@+id/priceRangeUpDownImageView"
+                app:layout_constraintEnd_toStartOf="@+id/price1TextView"
+                app:layout_constraintTop_toTopOf="@+id/priceRangeUpDownImageView"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/price2TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto"
+                android:text="$ 0"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_body_size"
+                app:layout_constraintBottom_toBottomOf="@+id/priceRangeUpDownImageView"
+                app:layout_constraintEnd_toStartOf="@+id/priceUnit1TextView"
+                app:layout_constraintTop_toTopOf="@+id/priceRangeUpDownImageView"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/priceUnit2TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto"
+                android:text="Label2"
+                android:textColor="@color/md_grey_600"
+                android:textSize="@dimen/font_body_size"
+                app:layout_constraintBottom_toBottomOf="@+id/priceRangeUpDownImageView"
+                app:layout_constraintEnd_toStartOf="@+id/price2TextView"
+                app:layout_constraintTop_toTopOf="@+id/priceRangeUpDownImageView"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/productNameTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto"
+                android:text="Product Name"
+                android:textColor="@color/md_grey_800"
+                android:textSize="@dimen/font_body_size"
+                app:layout_constraintBottom_toBottomOf="@+id/priceRangeUpDownImageView"
+                app:layout_constraintRight_toLeftOf="@+id/priceUnit2TextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/priceRangeUpDownImageView" />
+
+            <TextView
+                android:id="@+id/productDescriptionTextView"
+                android:layout_width="0dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Product Description"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_800"
+                android:textSize="@dimen/font_body_s_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productNameTextView" />
+
+            <ImageView
+                android:id="@+id/priceRangeUpDownImageView"
+                android:layout_width="50dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_down_arrow_black_24" />
+
+
+            <View
+                android:id="@+id/view24"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorLine"
+                app:layout_constraintTop_toBottomOf="@+id/productDescriptionTextView" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/orderOptionsLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/md_grey_100"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view24">
+
+                <TextView
+                    android:id="@+id/tipTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="26dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="Tip"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/md_grey_800"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tip10CheckBox"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/quantityTextView" />
+
+                <TextView
+                    android:id="@+id/quantityTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="Quantity"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/md_grey_800"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/minusImageView"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/quantityEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/layout_border"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:fontFamily="@font/roboto"
+                    android:hint="1"
+                    android:inputType="number"
+                    android:padding="@dimen/space_8"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/font_body_size"
+                    app:layout_constraintBottom_toBottomOf="@+id/minusImageView"
+                    app:layout_constraintEnd_toStartOf="@+id/plusImageView"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/minusImageView"
+                    app:layout_constraintTop_toTopOf="@+id/minusImageView" />
+
+                <ImageView
+                    android:id="@+id/minusImageView"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/quantityTextView"
+                    app:layout_constraintEnd_toStartOf="@+id/quantityEditText"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/quantityTextView"
+                    app:layout_constraintTop_toTopOf="@+id/quantityTextView"
+                    app:srcCompat="@drawable/baseline_minus_icon_24" />
+
+                <ImageView
+                    android:id="@+id/plusImageView"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/quantityEditText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/quantityEditText"
+                    app:layout_constraintTop_toTopOf="@+id/quantityEditText"
+                    app:srcCompat="@drawable/baseline_plus_icon_24" />
+
+                <CheckBox
+                    android:id="@+id/tip15CheckBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="15%"
+                    android:textColor="@color/colorCheckboxDefaultSelected"
+                    android:textSize="@dimen/font_body_size"
+                    android:theme="@style/PSButton.Checkbox.Basic.Primary"
+                    app:layout_constraintBottom_toBottomOf="@+id/tip10CheckBox"
+                    app:layout_constraintEnd_toStartOf="@+id/tip20CheckBox"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/tip10CheckBox"
+                    app:layout_constraintTop_toTopOf="@+id/tip10CheckBox" />
+
+                <CheckBox
+                    android:id="@+id/tip20CheckBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="20%"
+                    android:textColor="@color/colorCheckboxDefaultSelected"
+                    android:textSize="@dimen/font_body_size"
+                    android:theme="@style/PSButton.Checkbox.Basic.Primary"
+                    app:layout_constraintBottom_toBottomOf="@+id/tip15CheckBox"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/tip15CheckBox"
+                    app:layout_constraintTop_toTopOf="@+id/tip15CheckBox" />
+
+                <CheckBox
+                    android:id="@+id/tip10CheckBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="10%"
+                    android:textColor="@color/colorCheckboxDefaultSelected"
+                    android:textSize="@dimen/font_body_size"
+                    android:theme="@style/PSButton.Checkbox.Basic.Primary"
+                    app:layout_constraintBottom_toBottomOf="@+id/tipTextView"
+                    app:layout_constraintEnd_toStartOf="@+id/tip15CheckBox"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/tipTextView"
+                    app:layout_constraintTop_toTopOf="@+id/tipTextView" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constraintLayout26"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintTop_toBottomOf="@id/tipTextView">
+
+                    <Button
+                        android:id="@+id/addToCartButton"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@color/colorPrimary"
+                        android:paddingEnd="16dp"
+                        android:paddingStart="16dp"
+                        android:text="ADD TO CART"
+                        android:textColor="@color/md_white_1000"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

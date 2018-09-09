@@ -41,11 +41,11 @@ public class ViewStoreMenuActivity extends AppCompatActivity
     ViewPager viewPager;
     TabLayout tabLayout;
 
+    HashMap<String, ProductCategory> cateogyNameProductCategoryHashMap;
 
-    // map containing the product category as key
-    // and an arraylist of products as value
-    HashMap<ProductCategory, ArrayList<Product>> CategoryProductMap;
-
+    // map containing the category name as key
+    // and the product list corresponding to that category
+    HashMap<String, ArrayList<Product>> categoryNameProductHashMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,27 +71,37 @@ public class ViewStoreMenuActivity extends AppCompatActivity
     private void getProductList(){
         // init
         mDatabase = FirebaseFirestore.getInstance();
-        CategoryProductMap = new HashMap<>();
+        categoryNameProductHashMap = new HashMap<>();
+        cateogyNameProductCategoryHashMap = new HashMap<>();
 
         // get category list
-        mDatabase.collection("products/" + store.getStoreid() + "/categorylist").get().addOnCompleteListener(task -> {
+        mDatabase.collection("products/" + store.getStoreId() + "/categorylist").get().addOnCompleteListener(task -> {
            if (task.isSuccessful()){
                // loop over all categories
                for (QueryDocumentSnapshot categoryDoc :task.getResult()) {
-                   // for each category get products under this category
+                   // get category from document snapshot
                    ProductCategory category = categoryDoc.toObject(ProductCategory.class);
-                   String pro_path = "products/" + store.getStoreid() + "/categorylist/" + category.getCategoryid() + "/productslist";
+                   // set the category id
+                   category.setCategoryId(categoryDoc.getId());
+                   // put it into the hashmap using category name as key
+                   cateogyNameProductCategoryHashMap.put(category.getName(), category);
+                   // get the path to productslist
+                   String pro_path = "products/" + store.getStoreId() + "/categorylist/" + category.getCategoryId() + "/productslist";
+                   // get products on the above path
                    mDatabase.collection(pro_path).get().addOnCompleteListener(task1 -> {
                        if (task1.isSuccessful()){
                            ArrayList<Product> productList = new ArrayList<>();
                            // loop over all product under this catefory
                            for(QueryDocumentSnapshot productDoc : task1.getResult()){
-                               // and add the to an array list
-                               productList.add(productDoc.toObject(Product.class));
+                               // get product object
+                               Product product = productDoc.toObject(Product.class);
+                               // set product id
+                               product.setProductId(productDoc.getId());
+                               // add to list
+                               productList.add(product);
                            }
                            //put the category and the product list to map
-                           CategoryProductMap.put(category,productList);
-
+                           categoryNameProductHashMap.put(category.getName(),productList);
                            // create the tab layout
                            setupViewPager();
                        }else{
@@ -113,14 +123,11 @@ public class ViewStoreMenuActivity extends AppCompatActivity
 
         // iterate over all categories, convert objects to json and create a new
         // fragment for each category adding categoty and productlist objects as arguments
-        for (ProductCategory category : CategoryProductMap.keySet()){
-            ArrayList<Product> productList = CategoryProductMap.get(category);
-            ViewStoreMenuFragment fragment = new ViewStoreMenuFragment();
-             Bundle args = new Bundle();
-             args.putString("categoryJson",json.toJson(category));
-             args.putString("productListJson",json.toJson(productList));
-             fragment.setArguments(args);
-             adapter.addFragment(fragment, category.getName());
+        for (String categoryName : categoryNameProductHashMap.keySet()){
+            ArrayList<Product> productList = categoryNameProductHashMap.get(categoryName);
+            // use the static new instance method to pass the productlist
+            ViewStoreMenuFragment fragment = ViewStoreMenuFragment.newInstance(user, cateogyNameProductCategoryHashMap.get(categoryName),productList);
+            adapter.addFragment(fragment, categoryName);
         }
         viewPager.setAdapter(adapter);
     }

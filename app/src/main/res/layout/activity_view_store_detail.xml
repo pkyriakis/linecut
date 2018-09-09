@@ -113,7 +113,7 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/placeNameTextView"
+                        android:id="@+id/productNameTextView"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="8dp"
@@ -209,7 +209,7 @@
                         android:layout_marginTop="16dp"
                         android:tint="@color/md_grey_600"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/descriptionTextView"
+                        app:layout_constraintTop_toBottomOf="@+id/productDescriptionTextView"
                         app:srcCompat="@drawable/baseline_pin_dorp" />
 
                     <TextView
@@ -223,10 +223,10 @@
                         android:textAlignment="viewStart"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/imageView24"
-                        app:layout_constraintTop_toBottomOf="@+id/descriptionTextView" />
+                        app:layout_constraintTop_toBottomOf="@+id/productDescriptionTextView" />
 
                     <TextView
-                        android:id="@+id/descriptionTextView"
+                        android:id="@+id/productDescriptionTextView"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="8dp"
@@ -237,7 +237,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/placeNameTextView" />
+                        app:layout_constraintTop_toBottomOf="@+id/productNameTextView" />
 
                 </android.support.constraint.ConstraintLayout>
             </LinearLayout>

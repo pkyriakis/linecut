@@ -88,7 +88,7 @@ public class PhoneVerificationStep1Activity extends AppCompatActivity {
             if (queryDocumentSnapshots.isEmpty()){
                 user.setPhone(phone);
                 user.setPhoneVerCode((new Random()).nextInt(8999)+1000);
-                DocumentReference userRef = mDatabase.collection("users").document(user.getUid());
+                DocumentReference userRef = mDatabase.collection("users").document(user.getUserId());
                 userRef.set(user).addOnSuccessListener(aVoid -> {
                     Gson gson = new Gson();
                     String userJson = gson.toJson(user);

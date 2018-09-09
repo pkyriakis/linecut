@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 if (task1.isSuccessful()){// profile successfully retrieved
                     DocumentSnapshot userDoc = task1.getResult();
                     user = userDoc.toObject(User.class);
+                    user.setUserId(userDoc.getId());
                     Gson gson = new Gson();
                     String userJson = gson.toJson(user);
                     Intent intent1 = new Intent(MainActivity.this, ViewStoreDetailActivity.class);

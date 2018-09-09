@@ -3,7 +3,7 @@ package com.mylinecut.linecut.object;
 import java.util.ArrayList;
 
 public class Product {
-    private String name, description;
+    private String name, description, productId;
     private ArrayList<Double> priceperunit;
 
     public String getName() {
@@ -28,5 +28,13 @@ public class Product {
 
     public void setPriceperunit(ArrayList<Double> priceperunit) {
         this.priceperunit = priceperunit;
+    }
+
+    public String getProductId() {
+        return productId;
+    }
+
+    public void setProductId(String productId) {
+        this.productId = productId;
     }
 }

@@ -190,10 +190,10 @@ public class SignupActivity extends AppCompatActivity {
                         FirebaseUser mUser = mAuth.getCurrentUser();
                         if (mUser != null) {
                             String uid = mUser.getUid();
-                            user.setUid(uid);
+                            user.setUserId(uid);
 
-                            Log.d("uid", user.getUid());
-                            mDatabase.collection("users").document(user.getUid()).set(user).addOnSuccessListener(aVoid -> {
+                            Log.d("uid", user.getUserId());
+                            mDatabase.collection("users").document(user.getUserId()).set(user).addOnSuccessListener(aVoid -> {
                                 Gson gson = new Gson();
                                 String userJson = gson.toJson(user);
                                 Intent intent = new Intent(SignupActivity.this,PhoneVerificationStep1Activity.class);

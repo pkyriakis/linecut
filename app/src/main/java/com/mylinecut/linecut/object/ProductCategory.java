@@ -3,17 +3,9 @@ package com.mylinecut.linecut.object;
 import java.util.ArrayList;
 
 public class ProductCategory {
-    private String categoryid, comment, description, name,
-            serveddays, servedhours;
+    private String comment, description, name,
+            serveddays, servedhours, categoryId;
     ArrayList<String> unitlabels;
-
-    public String getCategoryid() {
-        return categoryid;
-    }
-
-    public void setCategoryid(String categoryid) {
-        this.categoryid = categoryid;
-    }
 
     public String getComment() {
         return comment;
@@ -61,5 +53,13 @@ public class ProductCategory {
 
     public void setUnitlabels(ArrayList<String> unitlabels) {
         this.unitlabels = unitlabels;
+    }
+
+    public String getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(String categoryId) {
+        this.categoryId = categoryId;
     }
 }
