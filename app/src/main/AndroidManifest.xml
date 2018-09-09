@@ -58,12 +58,6 @@
             android:name=".activity.prelims.PhoneVerificationStep2Activity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.client.AppDirectoryHome1Activity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".activity.client.AppDirectoryHome2Activity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".activity.client.ViewStoreDetailActivity"
             android:theme="@style/AppTheme.NoActionBar" />
 

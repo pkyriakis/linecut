@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -18,7 +17,6 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import com.google.gson.Gson;
 import com.mylinecut.linecut.R;
-import com.mylinecut.linecut.activity.client.AppDirectoryHome1Activity;
 import com.mylinecut.linecut.utils.*;
 import com.mylinecut.linecut.object.User;
 
@@ -108,10 +106,7 @@ public class LoginActivity extends AppCompatActivity {
                             DocumentSnapshot userDoc = task1.getResult();
                             User user = userDoc.toObject(User.class);
                             Gson gson = new Gson();
-                            String userJson = gson.toJson(user);
-                            Intent intent = new Intent(LoginActivity.this,AppDirectoryHome1Activity.class);
-                            intent.putExtra("userJson",userJson);
-                            startActivity(intent);
+                            // need to redirect to appropriate activity after log in
                             finish();
 
                         }

@@ -16,7 +16,6 @@ import android.widget.TextView;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.gson.Gson;
 import com.mylinecut.linecut.R;
-import com.mylinecut.linecut.activity.client.AppDirectoryHome2Activity;
 import com.mylinecut.linecut.object.User;
 import com.panaceasoft.awesomematerial.utils.Utils;
 import com.mylinecut.linecut.utils.CommonUI;
@@ -91,9 +90,7 @@ public class PhoneVerificationStep2Activity extends AppCompatActivity {
                         .addOnSuccessListener(aVoid -> {
                             Gson gson = new Gson();
                             String userJson = gson.toJson(user);
-                            Intent intent = new Intent(PhoneVerificationStep2Activity.this,AppDirectoryHome2Activity.class);
-                            intent.putExtra("userJson",userJson);
-                            startActivity(intent);
+                            // need to redirect user to some sort of home or dashboard activity
                             finish();
                         }).addOnFailureListener(e -> {
 

@@ -3,17 +3,12 @@ package com.mylinecut.linecut.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.*;
 import com.google.gson.Gson;
-import com.mylinecut.linecut.activity.client.AppDirectoryHome1Activity;
 import com.mylinecut.linecut.activity.client.ViewStoreDetailActivity;
-import com.mylinecut.linecut.activity.client.ViewStoreMenuActivity;
-import com.mylinecut.linecut.activity.prelims.PhoneVerificationStep1Activity;
-import com.mylinecut.linecut.activity.prelims.PhoneVerificationStep2Activity;
 import com.mylinecut.linecut.activity.prelims.SplashScreenActivity;
 import com.mylinecut.linecut.object.Product;
 import com.mylinecut.linecut.object.Store;
@@ -69,12 +64,7 @@ public class MainActivity extends AppCompatActivity {
     private void redirect(){
         Gson gson = new Gson();
         String userJson = gson.toJson(user);
-        Intent intent =  new Intent();
-        if(user.getType().equals("client")) {
-            intent = new Intent(MainActivity.this, AppDirectoryHome1Activity.class);
-        }
-        intent.putExtra("userJson",userJson);
-        startActivity(intent);
+        // need to redirect to appopriate activity depending on user type, client or waiter
         //finish();
 
     }
